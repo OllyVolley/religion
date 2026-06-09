@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Trinity — IslamChristianity.com</title>
+  <meta name="description" content="What do Islam and Christianity actually say about the Trinity? Side-by-side primary sources from the Quran and the Bible.">
+  <link rel="canonical" href="https://islamchristianity.com/topics/trinity/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0e0e11;
+      --bg-card: #16161b;
+      --bg-card-hover: #1c1c23;
+      --border: #2a2a33;
+      --text: #e4e4e8;
+      --text-muted: #8a8a96;
+      --accent: #c9a84c;
+      --accent-dim: rgba(201, 168, 76, 0.12);
+      --islamic-bg: rgba(52, 168, 84, 0.08);
+      --islamic-border: rgba(52, 168, 84, 0.25);
+      --islamic-label: #34a854;
+      --chris-bg: rgba(234, 67, 53, 0.08);
+      --chris-border: rgba(234, 67, 53, 0.25);
+      --chris-label: #ea4335;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --max-w: 800px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: #dbb85e; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(14,14,17,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    .nav-links a:hover { color: var(--accent); }
+
+    /* ── HERO ── */
+    .topic-hero {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem 3rem;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      letter-spacing: 0.02em;
+    }
+    .back-link:hover { color: var(--accent); }
+    .back-link::before { content: "←"; font-size: 0.9rem; }
+    .topic-hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4.5vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.8rem;
+    }
+    .topic-hero p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 600px;
+    }
+
+    /* ── POSITION SECTIONS ── */
+    .positions {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem 5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .position {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .position-header {
+      padding: 1.2rem 1.8rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .position-header.islamic {
+      background: var(--islamic-bg);
+      color: var(--islamic-label);
+      border-bottom: 1px solid var(--islamic-border);
+    }
+    .position-header.christian {
+      background: var(--chris-bg);
+      color: var(--chris-label);
+      border-bottom: 1px solid var(--chris-border);
+    }
+    .position-body {
+      padding: 2rem 1.8rem 2.2rem;
+    }
+    .position-body p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.4rem;
+      line-height: 1.7;
+    }
+    .position-body p:last-child { margin-bottom: 0; }
+
+    /* ── SOURCE QUOTES ── */
+    blockquote {
+      border-left: 2px solid var(--accent);
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+      background: var(--bg-card);
+      border-radius: 0 8px 8px 0;
+    }
+    blockquote.islamic-bq { border-left-color: var(--islamic-label); background: var(--islamic-bg); }
+    blockquote.christian-bq { border-left-color: var(--chris-label); background: var(--chris-bg); }
+
+    blockquote p {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 0.6rem;
+    }
+    blockquote cite {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-style: normal;
+      color: var(--text-muted);
+      letter-spacing: 0.01em;
+    }
+
+    /* ── NOTES ── */
+    .note {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      padding: 1rem 1.3rem;
+      background: var(--accent-dim);
+      border-radius: 8px;
+      border: 1px solid rgba(201,168,76,0.15);
+      margin-top: 1rem;
+    }
+    .note strong { color: var(--accent); font-weight: 600; }
+
+    /* ── CONTRADICTION TABLE ── */
+    .contradiction-table { max-width: var(--max-w); margin: 0 auto 5rem; padding: 0 1.5rem; }
+    .contradiction-table h2 { font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 1rem; color: var(--accent); }
+    .contradiction-table table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    .contradiction-table th { padding: 0.8rem 1rem; text-align: left; background: var(--bg-card); border-bottom: 2px solid var(--border); color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
+    .contradiction-table td { padding: 0.8rem 1rem; border-bottom: 1px solid var(--border); color: var(--text); }
+    .contradiction-table tr:last-child td { border-bottom: none; }
+    .contradiction-table .islamic-cell { color: var(--islamic-label); }
+    .contradiction-table .chris-cell { color: var(--chris-label); }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    footer p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+    footer a { color: var(--text-muted); text-decoration: underline; text-decoration-color: var(--border); }
+    footer a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .topic-hero { padding: 3.5rem 1.2rem 2.5rem; }
+      .position-body { padding: 1.4rem 1.2rem 1.6rem; }
+      .position-header { padding: 1rem 1.2rem; }
+      blockquote { padding: 1rem 1.2rem; }
+      blockquote p { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../../index.html" class="logo">Islam<span>Christianity</span>.com</a>
+    <div class="nav-links">
+      <a href="../../index.html">Topics</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+</nav>
+
+<div class="topic-hero">
+  <a href="../../index.html" class="back-link">All Topics</a>
+  <h1>Is God Three-in-One?</h1>
+  <p>The Trinity is the central Christian doctrine of God's nature — and the single clearest point of conflict with Islamic monotheism. Both traditions cite their sources.</p>
+</div>
+
+<main class="positions">
+
+  <!-- ── ISLAMIC POSITION ── -->
+  <section class="position">
+    <div class="position-header islamic">Islamic Position</div>
+    <div class="position-body">
+      <p>Islam teaches <strong>absolute, uncompromising monotheism (tawḥīd)</strong>. God (Allah) is one — indivisible, without partners, without equals, without offspring. The concept of God as "three" is rejected as <em>shirk</em> (associating partners with Allah), which the Quran calls the one unforgivable sin if one dies in that state.</p>
+
+      <blockquote class="islamic-bq">
+        <p>"O People of the Scripture, do not commit excess in your religion or say about Allah except the truth. The Messiah, Jesus, the son of Mary, was but a messenger of Allah and His word which He directed to Mary and a soul [created at a command] from Him. So believe in Allah and His messengers. And do not say, 'Three'; desist — it is better for you."</p>
+        <cite>— Quran 4:171 (Sūrat al-Nisāʾ, The Women)</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"They have certainly disbelieved who say, 'Allah is the third of three.' And there is no god except one God. And if they do not desist from what they say, there will surely afflict those who disbelieve among them a painful punishment."</p>
+        <cite>— Quran 5:73 (Sūrat al-Māʾidah, The Table Spread)</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"Say: He is Allah, [who is] One, Allah, the Eternal Refuge. He neither begets nor is born, nor is there to Him any equivalent."</p>
+        <cite>— Quran 112:1–4 (Sūrat al-Ikhlāṣ, The Sincerity)</cite>
+      </blockquote>
+
+      <p>The Quran explicitly denies that God has a son or partners. Surah 112 (al-Ikhlāṣ) is considered by classical scholars to be equivalent to one-third of the Quran in weight because it encapsulates the core Islamic creed: God is absolutely one.</p>
+
+      <p>The Quran calls Jesus <strong>Kalimatullah</strong> (كلمة الله — "Word of God") and <strong>Rūḥun minhu</strong> (روحٌ منه — "a spirit from Him"). But the Arabic text itself defines what these terms mean — no further interpretation needed:</p>
+
+      <blockquote class="islamic-bq">
+        <p>"The Messiah, Jesus, the son of Mary, was <strong>only</strong> (innamā) a messenger of Allah and <strong>His Word</strong> which He directed to Mary and <strong>a spirit from Him</strong>. And do not say, 'Three'; desist — it is better for you."</p>
+        <cite>— Quran 4:171 (Sūrat al-Nisāʾ) — The restrictive particle <strong>innamā</strong> ("only") limits Jesus to exactly these three titles: messenger, Word, spirit</cite>
+      </blockquote>
+
+      <p>The Arabic is explicit about what "Word" and "spirit" mean here:</p>
+
+      <blockquote class="islamic-bq">
+        <p>"Allah gives you glad tidings of <strong>a word from Him</strong> (bi-kalimatin minhu), whose name is the Messiah, Jesus, son of Mary."</p>
+        <cite>— Quran 3:45 (Sūrat Āl ʿImrān) — "A word" (kalimatin, indefinite) — a created act, not THE Word</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"We blew into her (Mary) <strong>from Our Spirit</strong> (min rūḥinā)." — The same verb (nafakhna) used for Allah breathing life into Adam.</p>
+        <cite>— Quran 66:12 (Sūrat aṭ-Taḥrīm) — "Blowing into" from "Our Spirit" — an act of creation, not incarnation</cite>
+      </blockquote>
+
+      <p>The Arabic grammar is unambiguous:</p>
+
+      <p>• <strong>Innamā</strong> (إِنَّمَا) — a restrictive particle meaning "only / nothing but." Jesus is limited to exactly what follows: messenger, Word, spirit. Everything else is excluded.</p>
+
+      <p>• <strong>Wa-kalimatuhu</strong> (وَكَلِمَتُهُ) — "His Word." The possessive "his" (hu) refers to Allah. This is Allah's creative command ("Kun" — "Be") directed to Mary. It is an <em>act</em> of God, not a <em>person</em> of God.</p>
+
+      <p>• <strong>Rūḥun minhu</strong> (رُوحٌ مِّنْهُ) — "a spirit <strong>from</strong> Him." The preposition <em>min</em> indicates origin/source, not shared essence. Jesus is a created being who receives spirit from Allah, not a co-eternal person.</p>
+
+      <p>• <strong>Bi-kalimatin minhu</strong> (بِكَلِمَةٍ مِّنْهُ) in 3:45 — "a word" (indefinite, not "the Word") <em>from</em> Him. The indefinite article (nun at the end of kalimatin) marks it as one instance among many — Allah's creative command, not a divine person.</p>
+
+      <div class="note">
+        <strong>Key point:</strong> The contradiction is structural and absolute. Islam teaches that Allah's Word and Spirit <em>as eternal attributes</em> of His essence are uncreated and infinite — but the Word that was "directed to Mary" (Quran 4:171) and the Spirit that was "blown into" her (Quran 66:12) are <em>created manifestations</em> of those attributes in time. Christianity teaches the Son and Holy Spirit are <em>not created</em> — they are co-equal, co-eternal persons of one divine essence. Both traditions can agree that Allah's Word is eternal. They fundamentally disagree on what the Word <em>is</em>: a created manifestation of God's power, or God Himself in person.
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CHRISTIAN POSITION ── -->
+  <section class="position">
+    <div class="position-header christian">Christian Position</div>
+    <div class="position-body">
+      <p>Christianity teaches that <strong>God is one Being in three co-equal, co-eternal persons: Father, Son, and Holy Spirit</strong>. This is not three gods, but one God in three persons — a mystery that Orthodox, Catholic, and Protestant traditions all affirm.</p>
+
+      <blockquote class="christian-bq">
+        <p>"Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit."</p>
+        <cite>— Matthew 28:19 (ESV) — Gospel of Matthew (c. 70–90 CE)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"The grace of the Lord Jesus Christ and the love of God and the fellowship of the Holy Spirit be with you all."</p>
+        <cite>— 2 Corinthians 13:14 (ESV) — Letter of Paul to the Corinthians</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"But the Helper, the Holy Spirit, whom the Father will send in my name, he will teach you all things and bring to your remembrance all that I have said to you."</p>
+        <cite>— John 14:26 (ESV) — Gospel of John (c. 90–120 CE)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"When the Helper comes, whom I will send to you from the Father, the Spirit of truth, who proceeds from the Father, he will bear witness about me."</p>
+        <cite>— John 15:26 (ESV)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"When the Spirit of truth comes, he will guide you into all the truth, for he will not speak on his own authority, but whatever he hears he will speak, and he will declare to you the things that are to come. He will glorify me, for he will take what is mine and declare it to you."</p>
+        <cite>— John 16:13–15 (ESV)</cite>
+      </blockquote>
+
+      <p>The Council of Nicaea (325 CE) formalized the doctrine against Arianism (which denied Christ's full divinity), declaring the Son "of one substance (homoousios) with the Father." The Council of Chalcedon (451 CE) further clarified Christ's two natures within the Trinitarian framework.</p>
+
+      <div class="note">
+        <strong>Key point:</strong> The word "Trinity" does not appear in the Bible, but Christians hold that the doctrine is the synthesis of biblical revelation: God is one (Deuteronomy 6:4) yet the Father, Son, and Holy Spirit are each called God throughout the New Testament.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="contradiction-table" id="about">
+  <h2>The Contradiction</h2>
+  <table>
+    <thead>
+      <tr><th></th><th class="islamic-cell">Islam</th><th class="chris-cell">Christianity</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Nature of God</td><td class="islamic-cell">Absolutely one, indivisible, no partners (Quran 112)</td><td class="chris-cell">One Being in three co-equal persons (Nicaea 325)</td></tr>
+      <tr><td>"Do not say three"</td><td class="islamic-cell">Quran 4:171 explicitly commands: "Do not say 'Three'"</td><td class="chris-cell">Matthew 28:19: baptizing in the name of Father, Son, Holy Spirit</td></tr>
+      <tr><td>God having a son</td><td class="islamic-cell">"He neither begets nor is born" (Quran 112:3)</td><td class="chris-cell">"You are my Son; today I have begotten you" (Psalm 2:7; Hebrews 1:5)</td></tr>
+      <tr><td>Shirk vs Orthodoxy</td><td class="islamic-cell">Calling God "three" = shirk (unforgivable sin)</td><td class="chris-cell">Denying the Trinity = heresy; orthodox faith requires it</td></tr>
+      <tr><td>Word/Spirit in the Quran</td><td class="islamic-cell">Jesus is "a word from Him" (kalimatin minhu, 3:45) and "a spirit from Him" — created acts of Allah, not divine persons. Quran 4:171: "innamā" (only) limits him to messenger, word, spirit</td><td class="chris-cell">The Word (Son) and Spirit are distinct eternal persons, co-equal with the Father</td></tr>
+      <tr><td>God's unity</td><td class="islamic-cell">Absolute unitarian oneness — no persons within God's essence (Quran 112)</td><td class="chris-cell">One essence, three distinct persons — Father, Son, Holy Spirit (Nicaea 325)</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>
+  <p>IslamChristianity.com — A scholarly reference for understanding what each tradition actually teaches.<br>
+  Not an argument. Not a debate. Just the sources, presented clearly.</p>
+</footer>
+
+</body>
+</html>

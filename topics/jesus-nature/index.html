@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nature of Jesus — IslamChristianity.com</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0e0e11; --bg-card: #16161b; --bg-card-hover: #1c1c23;
+      --border: #2a2a33; --text: #e4e4e8; --text-muted: #8a8a96;
+      --accent: #c9a84c; --accent-dim: rgba(201, 168, 76, 0.12);
+      --islamic-bg: rgba(52, 168, 84, 0.08); --islamic-border: rgba(52, 168, 84, 0.25);
+      --islamic-label: #34a854;
+      --chris-bg: rgba(234, 67, 53, 0.08); --chris-border: rgba(234, 67, 53, 0.25);
+      --chris-label: #ea4335;
+      --font-sans: 'Inter', -apple-system, BlinkMacMacFont, sans-serif;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --max-w: 800px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-sans); background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: #dbb85e; }
+    nav { position: sticky; top: 0; z-index: 50; background: rgba(14,14,17,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-family: var(--font-serif); font-weight: 700; font-size: 1.2rem; color: var(--text); letter-spacing: -0.02em; }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a { font-size: 0.85rem; font-weight: 500; color: var(--text-muted); letter-spacing: 0.02em; text-transform: uppercase; }
+    .nav-links a:hover { color: var(--accent); }
+    .topic-hero { max-width: var(--max-w); margin: 0 auto; padding: 4.5rem 1.5rem 3rem; }
+    .back-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.78rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2rem; letter-spacing: 0.02em; }
+    .back-link:hover { color: var(--accent); }
+    .back-link::before { content: "←"; font-size: 0.9rem; }
+    .topic-hero h1 { font-family: var(--font-serif); font-size: clamp(2rem, 4.5vw, 2.8rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 0.8rem; }
+    .topic-hero p { font-size: 1.05rem; color: var(--text-muted); max-width: 600px; }
+    .positions { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem 5rem; display: flex; flex-direction: column; gap: 2.5rem; }
+    .position { border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+    .position-header { padding: 1.2rem 1.8rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+    .position-header.islamic { background: var(--islamic-bg); color: var(--islamic-label); border-bottom: 1px solid var(--islamic-border); }
+    .position-header.christian { background: var(--chris-bg); color: var(--chris-label); border-bottom: 1px solid var(--chris-border); }
+    .position-body { padding: 2rem 1.8rem 2.2rem; }
+    .position-body p { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.4rem; line-height: 1.7; }
+    .position-body p:last-child { margin-bottom: 0; }
+    blockquote { border-left: 2px solid var(--accent); padding: 1.2rem 1.5rem; margin: 1.5rem 0; background: var(--bg-card); border-radius: 0 8px 8px 0; }
+    blockquote.islamic-bq { border-left-color: var(--islamic-label); background: var(--islamic-bg); }
+    blockquote.christian-bq { border-left-color: var(--chris-label); background: var(--chris-bg); }
+    blockquote p { font-family: var(--font-serif); font-size: 1.05rem; font-style: italic; color: var(--text); line-height: 1.7; margin-bottom: 0.6rem; }
+    blockquote cite { font-family: var(--font-sans); font-size: 0.78rem; font-style: normal; color: var(--text-muted); letter-spacing: 0.01em; }
+    .note { font-size: 0.82rem; color: var(--text-muted); padding: 1rem 1.3rem; background: var(--accent-dim); border-radius: 8px; border: 1px solid rgba(201,168,76,0.15); margin-top: 1rem; }
+    .note strong { color: var(--accent); font-weight: 600; }
+    .contradiction-table { max-width: var(--max-w); margin: 0 auto 5rem; padding: 0 1.5rem; }
+    .contradiction-table h2 { font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 1rem; color: var(--accent); }
+    .contradiction-table table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    .contradiction-table th { padding: 0.8rem 1rem; text-align: left; background: var(--bg-card); border-bottom: 2px solid var(--border); color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
+    .contradiction-table td { padding: 0.8rem 1rem; border-bottom: 1px solid var(--border); color: var(--text); }
+    .contradiction-table tr:last-child td { border-bottom: none; }
+    .contradiction-table .islamic-cell { color: var(--islamic-label); }
+    .contradiction-table .chris-cell { color: var(--chris-label); }
+    footer { border-top: 1px solid var(--border); padding: 2.5rem 1.5rem; text-align: center; }
+    footer p { font-size: 0.78rem; color: var(--text-muted); max-width: var(--max-w); margin: 0 auto; }
+    footer a { color: var(--text-muted); text-decoration: underline; text-decoration-color: var(--border); }
+    footer a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+    @media (max-width: 640px) {
+      .topic-hero { padding: 3.5rem 1.2rem 2.5rem; }
+      .position-body { padding: 1.4rem 1.2rem 1.6rem; }
+      .position-header { padding: 1rem 1.2rem; }
+      blockquote { padding: 1rem 1.2rem; }
+      blockquote p { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../../index.html" class="logo">Islam<span>Christianity</span>.com</a>
+    <div class="nav-links">
+      <a href="../../index.html">Topics</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+</nav>
+
+<div class="topic-hero">
+  <a href="../../index.html" class="back-link">All Topics</a>
+  <h1>Son of God or Prophet?</h1>
+  <p>What is Jesus? The Christian and Islamic answers are mutually exclusive — and both come from their own primary texts.</p>
+</div>
+
+<main class="positions">
+
+  <section class="position">
+    <div class="position-header islamic">Islamic Position</div>
+    <div class="position-body">
+      <p>Islam teaches that Jesus (ʿĪsā) is a **human prophet** — one of the greatest messengers of Allah, born of the virgin Mary, performing miracles by Allah's permission. He is the Messiah (al-Masīḥ), but only in the sense of a divinely appointed human messenger.</p>
+
+      <blockquote class="islamic-bq">
+        <p>"The Messiah, Jesus, the son of Mary, was but a messenger of Allah and His word which He directed to Mary and a soul [created at a command] from Him."</p>
+        <cite>— Quran 4:171 (Sūrat al-Nisāʾ)</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"That [is] Jesus, the son of Mary — the word of truth about which they are in doubt. So do not worship [anyone] besides Allah. I will surely do for you, as I have done for you, destruction."</p>
+        <cite>— Quran 43:59–60 (Sūrat az-Zukhruf)</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"And [make me] a protector of the Children of Israel, [saying], 'Indeed I have come to you with a sign from your Lord...'"</p>
+        <cite>— Quran 3:49 (Sūrat Āl ʿImrān) — Jesus speaking</cite>
+      </blockquote>
+
+      <p>Jesus is listed among the five greatest prophets in Islam (Ulu al-Azm): Noah, Abraham, Moses, Jesus, and Muhammad. But he is strictly human — not divine, not part of a Trinity, not the Son of God.</p>
+
+      <div class="note">
+        <strong>Key point:</strong> In Islam, calling Jesus the "Son of God" is the gravest theological error — it's <em>shirk</em> (associating partners with Allah). Allah explicitly says: "He neither begets nor is born." (Quran 112:3)
+      </div>
+    </div>
+  </section>
+
+  <section class="position">
+    <div class="position-header christian">Christian Position</div>
+    <div class="position-body">
+      <p>Christianity teaches that Jesus is **fully God and fully man** — the eternal Son, the second person of the Trinity, who became incarnate through the virgin birth. He is not merely a prophet; he is the Word made flesh.</p>
+
+      <blockquote class="christian-bq">
+        <p>"In the beginning was the Word, and the Word was with God, and the Word was God. He was in the beginning with God." — "And the Word became flesh and dwelt among us, and we have seen his glory, glory as of the only Son from the Father."</p>
+        <cite>— John 1:1, 14 (ESV) — Gospel of John (c. 90–120 CE)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"For in him the whole fullness of deity dwells bodily."</p>
+        <cite>— Colossians 2:9 (ESV) — Letter of Paul to the Colossians</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"I and the Father are one."</p>
+        <cite>— John 10:30 (ESV)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"Thomas said to him, 'My Lord and my God!' Jesus said to him, 'Have you believed because you have seen me?'"</p>
+        <cite>— John 20:28–29 (ESV)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"For to us a child is born, to us a son is given; and the government shall be upon his shoulder, and his name shall be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace."</p>
+        <cite>— Isaiah 9:6 (ESV) — Hebrew Bible/Old Testament (c. 8th century BCE)</cite>
+      </blockquote>
+
+      <p>The early Church councils (Nicaea 325 CE, Chalcedon 451 CE) formalized this as orthodox doctrine: Jesus is one person with two natures — fully divine and fully human — without confusion, change, division, or separation.</p>
+
+      <p>But this was not a late invention. Long before Nicaea, early Christians were already worshiping Jesus as God:</p>
+
+      <blockquote class="christian-bq">
+        <p>"Jesus Christ our God."</p>
+        <cite>— Ignatius of Antioch, <em>Letter to the Ephesians</em> 18:2 (c. 108 CE) — a disciple of John the Apostle</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"Let us acknowledge our God, Jesus Christ, through whom glory is given to the Father, now and forever and forever. Amen."</p>
+        <cite>— Ignatius of Antioch, <em>Letter to the Romans</em> prologue (c. 108–110 CE)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"Jesus Christ, who is our eternal joy, who is your bishop. … where even Peter glorified you, when he counted you worthy to reach Rome."</p>
+        <cite>— Ignatius of Antioch, <em>Letter to the Ephesians</em> 20:2 (c. 108 CE)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"May grace be with you all who are in Jesus Christ, who is the Lord of the churches, the father and mother of us all."</p>
+        <cite>— Ignatius of Antioch, <em>Letter to the Ephesians</em> 1:2 (c. 108 CE) — addressing Jesus with language reserved for God alone</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"Pray one for another, brethren. Your prayer is not without power or profit. I know that you are fully established in the truth of our God, and that the Lord Jesus Christ, who is your Father's contemplation, is your unshakable faith."</p>
+        <cite>— Ignatius of Antioch, <em>Letter to the Ephesians</em> 9:1 (c. 108 CE)</cite>
+      </blockquote>
+
+      <p><strong>Clement of Rome</strong> (c. 96 CE), a contemporary of the apostles, wrote to the Corinthians calling Jesus <em>"Lord and God"</em>. The <strong>Didache</strong> (late 1st century) instructed Christians to baptize <em>"in the name of the Father and of the Son and of the Holy Spirit"</em> — placing Jesus on equal footing with God the Father. <strong>Polycarp</strong> (c. 110–155 CE), also a disciple of John, was martyred calling on <em>"the Lord Jesus Christ"</em> as the object of his worship.</p>
+
+      <p>None of these figures waited for Nicaea. They lived within one generation of the apostles. The worship of Jesus as God was not a doctrinal development — it was the practice from the beginning.</p>
+
+      <div class="note">
+        <strong>Key point:</strong> For Christians, Jesus is not merely a great moral teacher or prophet. His identity <em>is</em> the gospel. If he is not God incarnate, Christianity collapses. He also explicitly claimed divine authority: <em>"I am the way, and the truth, and the life. No one comes to the Father except through me"</em> (John 14:6) — a claim no mere prophet would make, and which directly contradicts Islam's view of him as one prophet among many.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="contradiction-table" id="about">
+  <h2>The Contradiction</h2>
+  <table>
+    <thead>
+      <tr><th></th><th class="islamic-cell">Islam</th><th class="chris-cell">Christianity</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Jesus's identity</td><td class="islamic-cell">Human prophet, greatest of the messengers</td><td class="chris-cell">God incarnate, second person of the Trinity</td></tr>
+      <tr><td>"Son of God"</td><td class="islamic-cell">Metaphor rejected — Allah "neither begets nor is born"</td><td class="chris-cell">Literal — eternal generation, same essence as the Father</td></tr>
+      <tr><td>Quran vs Bible</td><td class="islamic-cell">Quran 4:171: Jesus "was but a messenger"</td><td class="chris-cell">John 1:1: "the Word was God"</td></tr>
+      <tr><td>Can Jesus forgive sins?</td><td class="islamic-cell">No — only Allah forgives sins</td><td class="chris-cell">Yes — "Your sins are forgiven" (Mark 2:5–10)</td></tr>
+      <tr><td>Is Jesus worship-worthy?</td><td class="islamic-cell">Absolutely not — worship belongs to Allah alone</td><td class="chris-cell">Yes — Thomas calls him "My Lord and my God" (John 20:28)</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>
+  <p>IslamChristianity.com — A scholarly reference for understanding what each tradition actually teaches.<br>
+  Not an argument. Not a debate. Just the sources, presented clearly.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crucifixion of Jesus — IslamChristianity.com</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0e0e11;
+      --bg-card: #16161b;
+      --bg-card-hover: #1c1c23;
+      --border: #2a2a33;
+      --text: #e4e4e8;
+      --text-muted: #8a8a96;
+      --accent: #c9a84c;
+      --accent-dim: rgba(201, 168, 76, 0.12);
+      --islamic-bg: rgba(52, 168, 84, 0.08);
+      --islamic-border: rgba(52, 168, 84, 0.25);
+      --islamic-label: #34a854;
+      --chris-bg: rgba(234, 67, 53, 0.08);
+      --chris-border: rgba(234, 67, 53, 0.25);
+      --chris-label: #ea4335;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --max-w: 800px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: #dbb85e; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(14,14,17,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    .nav-links a:hover { color: var(--accent); }
+
+    /* ── HERO ── */
+    .topic-hero {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem 3rem;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      letter-spacing: 0.02em;
+    }
+    .back-link:hover { color: var(--accent); }
+    .back-link::before { content: "←"; font-size: 0.9rem; }
+    .topic-hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4.5vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.8rem;
+    }
+    .topic-hero p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 600px;
+    }
+
+    /* ── POSITION SECTIONS ── */
+    .positions {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem 5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .position {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .position-header {
+      padding: 1.2rem 1.8rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .position-header.islamic {
+      background: var(--islamic-bg);
+      color: var(--islamic-label);
+      border-bottom: 1px solid var(--islamic-border);
+    }
+    .position-header.christian {
+      background: var(--chris-bg);
+      color: var(--chris-label);
+      border-bottom: 1px solid var(--chris-border);
+    }
+    .position-body {
+      padding: 2rem 1.8rem 2.2rem;
+    }
+    .position-body p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.4rem;
+      line-height: 1.7;
+    }
+    .position-body p:last-child { margin-bottom: 0; }
+
+    /* ── SOURCE QUOTES ── */
+    blockquote {
+      border-left: 2px solid var(--accent);
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+      background: var(--bg-card);
+      border-radius: 0 8px 8px 0;
+    }
+    blockquote.islamic-bq { border-left-color: var(--islamic-label); background: var(--islamic-bg); }
+    blockquote.christian-bq { border-left-color: var(--chris-label); background: var(--chris-bg); }
+
+    blockquote p {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 0.6rem;
+    }
+    blockquote cite {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-style: normal;
+      color: var(--text-muted);
+      letter-spacing: 0.01em;
+    }
+
+    /* ── NOTES ── */
+    .note {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      padding: 1rem 1.3rem;
+      background: var(--accent-dim);
+      border-radius: 8px;
+      border: 1px solid rgba(201,168,76,0.15);
+      margin-top: 1rem;
+    }
+    .note strong { color: var(--accent); font-weight: 600; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    footer p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+    footer a { color: var(--text-muted); text-decoration: underline; text-decoration-color: var(--border); }
+    footer a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .topic-hero { padding: 3.5rem 1.2rem 2.5rem; }
+      .position-body { padding: 1.4rem 1.2rem 1.6rem; }
+      .position-header { padding: 1rem 1.2rem; }
+      blockquote { padding: 1rem 1.2rem; }
+      blockquote p { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../../index.html" class="logo">Islam<span>Christianity</span>.com</a>
+    <div class="nav-links">
+      <a href="../../index.html">Topics</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+</nav>
+
+<div class="topic-hero">
+  <a href="../../index.html" class="back-link">All Topics</a>
+  <h1>Did Jesus Die on the Cross?</h1>
+  <p>The crucifixion is the single most disputed historical and theological claim between Islam and Christianity. Both traditions are clear — and directly contradictory.</p>
+</div>
+
+<main class="positions">
+
+  <!-- ── ISLAMIC POSITION ── -->
+  <section class="position">
+    <div class="position-header islamic">Islamic Position</div>
+    <div class="position-body">
+      <p>Islam teaches that <strong>Jesus (ʿĪsā) was not crucified nor killed</strong>. According to the Quran, Allah raised Jesus up to Himself and made it <em>appear</em> to people that he was crucified.</p>
+
+      <blockquote class="islamic-bq">
+        <p>"And [for] their saying, 'Indeed, we have killed the Messiah, Jesus the son of Mary, the messenger of Allah.' And they did not kill him, nor did they crucify him; but [another] was made to resemble him to them."</p>
+        <cite>— Quran 4:157 (Sūrat al-Nisāʾ)</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"But Allah raised him up to Himself. And Allah is Ever-Mighty, All-Wise."</p>
+        <cite>— Quran 4:158 (Sūrat al-Nisāʾ)</cite>
+      </blockquote>
+
+      <p>Classical Islamic scholarship (al-Ṭabarī, al-Qurṭubī, Ibn Kathīr) holds that someone else — commonly said to have been Judas Iscariot or a volunteer — was made to look like Jesus and was crucified in his place. Jesus himself was taken up bodily into heaven and will return before the Day of Judgment.</p>
+
+      <div class="note">
+        <strong>Key point:</strong> The Islamic view is not that Jesus was rescued at the last moment — but that he was <em>never</em> crucified at all. The crucifixion was an illusion arranged by Allah.
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CHRISTIAN POSITION ── -->
+  <section class="position">
+    <div class="position-header christian">Christian Position</div>
+    <div class="position-body">
+      <p>Christianity teaches that <strong>Jesus was crucified under Pontius Pilate, died, and was buried</strong> — and on the third day rose from the dead. The crucifixion is central to Christian theology: it is the atoning sacrifice for human sin.</p>
+
+      <blockquote class="christian-bq">
+        <p>"For Christ also suffered once for sins, the righteous for the unrighteous, that he might bring us to God."</p>
+        <cite>— 1 Peter 3:18 (ESV)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"And when they had crucified him, they divided his garments by casting lots. … It was the third hour when they crucified him."</p>
+        <cite>— Mark 15:24–25 (ESV) — Gospel of Mark (c. 65–70 CE)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"He himself bore our sins in his body on the tree, that we might die to sin and live to righteousness. By his wounds you have been healed."</p>
+        <cite>— 1 Peter 2:24 (ESV)</cite>
+      </blockquote>
+
+      <p>All four canonical Gospels (Matthew 27, Mark 15, Luke 23, John 19) narrate the crucifixion in detail. The Apostle Paul's letters (written 5–25 years before the Gospels) repeatedly reference the crucifixion as a historical fact and the foundation of the gospel (1 Corinthians 15:3–4).</p>
+
+      <p>The crucifixion is also attested by <strong>non-Christian, hostile sources</strong> — writers who had no incentive to promote Christianity:</p>
+
+      <blockquote class="christian-bq">
+        <p>"Christus, from whom the name [Christian] had its origin, suffered the extreme penalty during the reign of Tiberius at the hands of one of our envoys, Pontius Pilate."</p>
+        <cite>— Tacitus, <em>Annals</em> 15.44 (c. 116 CE) — Roman senator and historian</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"About this time there lived Jesus, a wise man . . . . When Pilate, upon hearing him accused by men of the highest standing amongst us, had condemned him to be crucified . . . . And the tribe of the Christians, so called after him, has until this day not died out."</p>
+        <cite>— Josephus, <em>Antiquities of the Jews</em> 18.3.3 (c. 93 CE) — Jewish-Roman historian</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"Pliny the Younger, governor of Bithynia, wrote to Trajan (c. 112 CE) that Christians "sang hymns to Christ as to a god." This correspondence proves that within 80 years of the crucifixion, the execution of Christ under Pontius Pilate was accepted as fact by Roman provincial authorities — even by those investigating the religion's claims."</p>
+        <cite>— Pliny the Younger, <em>Letters</em> 10.96 (c. 112 CE) — Roman governor's correspondence to Emperor Trajan</cite>
+      </blockquote>
+
+      <p><strong>Old Testament prophecies written centuries before crucifixion existed</strong> describe the method with startling detail. Notably, <strong>Isaiah 53</strong> was written c. 700 BCE — more than 600 years before crucifixion was invented by the Persians and adopted by the Romans. Psalm 22 (David, c. 1000 BCE) describes the physical experience of crucifixion with forensic precision:</p>
+
+      <blockquote class="christian-bq">
+        <p>"My God, my God, why have you forsaken me? Why are you so far from helping me, from the words of my roaring? O my God, I cry by day, but you do not answer, and by night, but I find no rest. Yet you are holy, enthroned on the praises of Israel. In you our fathers trusted; they trusted, and you delivered them. To you they cried out and were saved; in you they trusted and were not put to shame. But I am a worm and not a man, scorned by mankind and despised by the people. All who see me mock at me; they make mouths at me; they shake their heads; 'Commit your cause to the Lord; let him deliver him; let him deliver him, for he delights in him!'"</p>
+        <cite>— Psalm 22:1–8 (ESV) — written c. 1000 BCE</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"For dogs are all around me, a company of evildoers encircles me; they have pierced my hands and my feet — I can count all my bones — they stare and gloat over me; they divide my garments among them, and for my clothing they cast lots."</p>
+        <cite>— Psalm 22:16–18 (ESV)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"He was despised and rejected by men, a man of sorrows, and acquainted with grief; as one from whom men hide their faces he was despised, and we esteemed him not. Surely he has borne our griefs and carried our sorrows; yet we esteemed him stricken, smitten by God, and afflicted. But he was pierced for our transgressions; he was crushed for our iniquities; upon him was the chastisement that brought us peace, and with his wounds we are healed. All we like sheep have gone astray; we have turned — every one — to his own way; and the Lord has laid on him the iniquity of us all. He was oppressed, and he was afflicted, yet he opened not his mouth; he was led like a lamb to the slaughter and like a sheep before its shearers is silent, so he opened not his mouth. By oppression and judgment he was taken away; and as for his generation, who considered that he was cut off out of the land of the living, stricken for the transgression of my people? And they made his grave with the wicked and with a rich man in his death, although he had done no violence, and there was no deceit in his mouth."</p>
+        <cite>— Isaiah 53:3–9 (ESV) — written c. 700 BCE</cite>
+      </blockquote>
+
+      <p>The parallels are striking: pierced hands and feet (Psalm 22:16), casting lots for garments (Psalm 22:18), silence before accusers (Isaiah 53:7), bones not broken (Psalm 22:17), and dying between criminals (Isaiah 53:9). None of this depends on Christian testimony — these texts predate Christianity by centuries.</p>
+
+      <div class="note">
+        <strong>Key point:</strong> For Christians, the crucifixion is not incidental — it is the core of the gospel. Without it, there is no atonement, no resurrection, no salvation.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="about">
+  <p>IslamChristianity.com — A scholarly reference for understanding what each tradition actually teaches.<br>
+  Not an argument. Not a debate. Just the sources, presented clearly.</p>
+</footer>
+
+</body>
+</html>

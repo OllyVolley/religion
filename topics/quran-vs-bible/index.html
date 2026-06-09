@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quran vs Bible — Preserved Scripture? — IslamChristianity.com</title>
+  <meta name="description" content="Does the Quran confirm or correct the Bible? Both traditions claim their scripture is preserved and authoritative. Here are the primary sources.">
+  <link rel="canonical" href="https://islamchristianity.com/topics/quran-vs-bible/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0e0e11;
+      --bg-card: #16161b;
+      --bg-card-hover: #1c1c23;
+      --border: #2a2a33;
+      --text: #e4e4e8;
+      --text-muted: #8a8a96;
+      --accent: #c9a84c;
+      --accent-dim: rgba(201, 168, 76, 0.12);
+      --islamic-bg: rgba(52, 168, 84, 0.08);
+      --islamic-border: rgba(52, 168, 84, 0.25);
+      --islamic-label: #34a854;
+      --chris-bg: rgba(234, 67, 53, 0.08);
+      --chris-border: rgba(234, 67, 53, 0.25);
+      --chris-label: #ea4335;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --max-w: 800px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: #dbb85e; }
+
+    nav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(14,14,17,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    .nav-links a:hover { color: var(--accent); }
+
+    .topic-hero {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem 3rem;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      letter-spacing: 0.02em;
+    }
+    .back-link:hover { color: var(--accent); }
+    .back-link::before { content: "←"; font-size: 0.9rem; }
+    .topic-hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4.5vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.8rem;
+    }
+    .topic-hero p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 600px;
+    }
+
+    .positions {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem 5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .position {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .position-header {
+      padding: 1.2rem 1.8rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .position-header.islamic {
+      background: var(--islamic-bg);
+      color: var(--islamic-label);
+      border-bottom: 1px solid var(--islamic-border);
+    }
+    .position-header.christian {
+      background: var(--chris-bg);
+      color: var(--chris-label);
+      border-bottom: 1px solid var(--chris-border);
+    }
+    .position-body {
+      padding: 2rem 1.8rem 2.2rem;
+    }
+    .position-body p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.4rem;
+      line-height: 1.7;
+    }
+    .position-body p:last-child { margin-bottom: 0; }
+
+    blockquote {
+      border-left: 2px solid var(--accent);
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+      background: var(--bg-card);
+      border-radius: 0 8px 8px 0;
+    }
+    blockquote.islamic-bq { border-left-color: var(--islamic-label); background: var(--islamic-bg); }
+    blockquote.christian-bq { border-left-color: var(--chris-label); background: var(--chris-bg); }
+
+    blockquote p {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 0.6rem;
+    }
+    blockquote cite {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-style: normal;
+      color: var(--text-muted);
+      letter-spacing: 0.01em;
+    }
+
+    .note {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      padding: 1rem 1.3rem;
+      background: var(--accent-dim);
+      border-radius: 8px;
+      border: 1px solid rgba(201,168,76,0.15);
+      margin-top: 1rem;
+    }
+    .note strong { color: var(--accent); font-weight: 600; }
+
+    .contradiction-table { max-width: var(--max-w); margin: 0 auto 5rem; padding: 0 1.5rem; }
+    .contradiction-table h2 { font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 1rem; color: var(--accent); }
+    .contradiction-table table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    .contradiction-table th { padding: 0.8rem 1rem; text-align: left; background: var(--bg-card); border-bottom: 2px solid var(--border); color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
+    .contradiction-table td { padding: 0.8rem 1rem; border-bottom: 1px solid var(--border); color: var(--text); }
+    .contradiction-table tr:last-child td { border-bottom: none; }
+    .contradiction-table .islamic-cell { color: var(--islamic-label); }
+    .contradiction-table .chris-cell { color: var(--chris-label); }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    footer p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+    footer a { color: var(--text-muted); text-decoration: underline; text-decoration-color: var(--border); }
+    footer a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+
+    @media (max-width: 640px) {
+      .topic-hero { padding: 3.5rem 1.2rem 2.5rem; }
+      .position-body { padding: 1.4rem 1.2rem 1.6rem; }
+      .position-header { padding: 1rem 1.2rem; }
+      blockquote { padding: 1rem 1.2rem; }
+      blockquote p { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../../index.html" class="logo">Islam<span>Christianity</span>.com</a>
+    <div class="nav-links">
+      <a href="../../index.html">Topics</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+</nav>
+
+<div class="topic-hero">
+  <a href="../../index.html" class="back-link">All Topics</a>
+  <h1>Quran vs Bible — Which Scripture is Preserved?</h1>
+  <p>Both traditions claim their scripture is the preserved word of God. The Quran says the earlier books were corrupted. The Bible says God's word stands forever. Here's what each says.</p>
+</div>
+
+<main class="positions">
+
+  <!-- ── ISLAMIC POSITION ── -->
+  <section class="position">
+    <div class="position-header islamic">Islamic Position</div>
+    <div class="position-body">
+      <p>Islam teaches that the Quran is <strong>the final, perfected, and fully preserved revelation</strong> from Allah, confirming what was in previous scriptures while correcting what was altered. The Quran acknowledges that the Torah and Gospel were originally divine revelations but claims they have been <em>tahrīf</em> (corrupted/distorted) over time by human hands.</p>
+
+      <blockquote class="islamic-bq">
+        <p>"And We have revealed to you, [O Muhammad], the Book in truth, confirming that which preceded it of the Scripture and as a criterion over it."</p>
+        <cite>— Quran 5:48 (Sūrat al-Māʾidah, The Table Spread)</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"And if anyone other than Allah is his lord, then let them bring a clear proof."</p>
+        <cite>— Quran 5:116 (Sūrat al-Māʾidah) — Allah speaking on the Day of Judgment</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"And We revealed the Torah, in which was guidance and light. The prophets who submitted [to Allah] judged [by it] for the Jews..."</p>
+        <cite>— Quran 5:44 (Sūrat al-Māʾidah)</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"Indeed, it is We who sent down the Qur'an and indeed, We will be its guardian."</p>
+        <cite>— Quran 15:9 (Sūrat al-Ḥijr, The Hijr)</cite>
+      </blockquote>
+
+      <p>Classical Islamic scholarship holds that Jews and Christians altered (taḥrīf) their scriptures by changing, omitting, or misinterpreting the original revelations. The Quran thus serves as the criterion (furqān) that distinguishes truth from corruption in prior texts. The current Bible, in the Islamic view, contains remnants of the original message mixed with human corruption.</p>
+
+      <div class="note">
+        <strong>The Tahrīf Dilemma:</strong> The Quran simultaneously commands the People of the Book to judge by their own scriptures (Quran 5:43, 5:44, 5:47, 5:68) and says those same scriptures are corrupted. If the Torah and Gospel are fully corrupted, commanding people to follow them is self-contradictory. If they are not corrupted, the Quran's claim that they need correction becomes unnecessary. Classical scholars resolved this by saying the Quran refers only to partial corruption — some verses altered, others preserved — but the tension remains: why command people to judge by texts you say are unreliable?
+      </div>
+
+      <div class="note">
+        <strong>Key point:</strong> The Islamic claim is not that the Torah and Gospel had <em>no</em> divine origin — but that they have been corrupted over centuries, and the Quran is the final, error-free correction.
+      </div>
+
+      <div class="note">
+        <strong>The Compilation of the Quran:</strong> The Quran was not compiled into a single codex during Muhammad's lifetime. According to Islamic tradition (Sahih al-Bukhari), the first caliph Abu Bakr ordered Zayd ibn Thabit to collect the Quran from scrolls, bones, and the memories of companions after the Battle of al-Yamama (632 CE) killed hundreds of Quran reciters. Zayd was reluctant: "How can I do something the Prophet himself didn't do?" Abu Bakr insisted. The compiled codex passed to Umar, then to Umar's daughter Hafsa.
+
+        When the third caliph Uthman ibn Affan (c. 650 CE) learned that Muslims in Iraq and the Levant were disputing over different readings of the Quran — each believing their reading was correct and the others were wrong — he ordered Hafsa to send him her codex. He formed a committee (Zayd ibn Thabit, Abd Allah ibn al-Zubayr, Sa'id ibn al-As, and Abd al-Rahman ibn al-Harith) to produce standardized copies in the Qurayshi dialect. Multiple copies were sent to major cities, and Uthman ordered <strong>all other versions of the Quran burned</strong>.
+
+        This means: the Quran as it exists today is the result of a political decision to standardize one reading and destroy all others. The competing codices of Ibn Mas'ud (Iraq) and Ubayy ibn Ka'b (Levant) — which contained variant wordings, readings, and even some differing verse orders — were eliminated.
+      </div>
+
+      <div class="note">
+        <strong>Three Different Printed Qurans Circulate Today:</strong> Even after standardization, the Quran survives in <strong>three different main recitations (riwayah)</strong> that have been in circulation for centuries — each with <strong>actual textual differences</strong>, not just pronunciation:
+
+        <p><strong>1. Hafs</strong> — The most widespread reading today. Became the global standard after the 1924 Cairo edition. Used by ~95% of Muslims worldwide.</p>
+
+        <p><strong>2. Qalun</strong> — Regional circulation in North Africa. Widely used in Libya, Tunisia, Algeria, Morocco.</p>
+
+        <p><strong>3. Warsh</strong> — Regional circulation in West Africa (Mauritania, Mali, Niger, Chad). Printed editions appeared later.</p>
+
+        <p><strong>These are NOT identical texts.</strong> Real word-level differences exist:</p>
+
+        <p>• <strong>Surah 57:24</strong> — Different wordings between Hafs and Warsh/Qalun (same general meaning, different wording)</p>
+
+        <p>• <strong>Surah 37:12 (As-Saffat)</strong> — A single verse differs: Hafs reads <em>ajibtu</em> (I wondered) while Qalun/Warsh reads <em>ajibta</em> (he wondered) — a subject shift that changes who is doing the wondering</p>
+
+        <p>• <strong>Surah 11:81 (Hud)</strong> — In Hafs, Lot is told to leave his family with him, <strong>except his wife</strong>. In Warsh, the wording implies Lot leaves with his <strong>entire family</strong> — no one looks back <strong>except his wife</strong>. The difference affects whether the wife is with Lot or left behind in the city.</p>
+
+        <p>This means: the Quran that exists today is not one single, uniform text. Even the "standardized" Quran survives in multiple printed editions with verified textual variants. Compare this to the Christian claim that the Bible is preserved while the Quran is corrupted — when in fact the Quran itself has multiple, divergent textual traditions.</p>
+      </div>
+
+  <!-- ── CHRISTIAN POSITION ── -->
+  <section class="position">
+    <div class="position-header christian">Christian Position</div>
+    <div class="position-body">
+      <p>Christianity teaches that <strong>the Bible — both Old and New Testaments — is the inspired, authoritative word of God</strong>. The Old Testament (Hebrew Bible) was preserved by the Jewish people over millennia, and the New Testament was preserved through early Christian manuscripts. God's word is described as eternal and unchanging.</p>
+
+      <blockquote class="christian-bq">
+        <p>"The grass withers, the flower fades, but the word of our God will stand forever."</p>
+        <cite>— Isaiah 40:8 (ESV) — Hebrew Bible/Old Testament (c. 8th century BCE)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"For truly, I say to you, until heaven and earth pass away, not an iota, not a dot, will pass from the Law until all is accomplished."</p>
+        <cite>— Matthew 5:18 (ESV) — Gospel of Matthew (c. 70–90 CE)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"I have come to do your will, O God."</p>
+        <cite>— Hebrews 10:7 (ESV) — Letter to the Hebrews (quoting Psalm 40:6–8)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"I say to you, it is easier for heaven and earth to pass away than for one dot of the Law to fall."</p>
+        <cite>— Luke 16:17 (ESV) — Gospel of Luke (c. 80–90 CE)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"Your word, O Lord, stands firm in the heavens."</p>
+        <cite>— Psalm 119:89 (ESV) — Hebrew Bible/Old Testament</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"The statutes of the Lord are true, all of them firmly established."</p>
+        <cite>— Psalm 119:160 (ESV)</cite>
+      </blockquote>
+
+      <h3 style="font-family: var(--font-serif); font-size: 1.2rem; margin: 2rem 0 1.2rem; color: var(--accent);">Manuscript Evidence for Biblical Preservation</h3>
+
+      <p><strong>Hebrew Bible — Dead Sea Scrolls (1947–1956):</strong></p>
+
+      <p>In 1947, Bedouin shepherds discovered jars containing ancient scrolls in caves near Qumran on the northwest shore of the Dead Sea. Over the next decade, additional caves were explored, revealing approximately <strong>981 distinct texts</strong> dating from the 3rd century BCE to the 1st century CE. These include fragments from every book of the Hebrew Bible except Esther — making it the oldest known collection of Hebrew Scriptures.</p>
+
+      <p>The most spectacular find was the <strong>Great Isaiah Scroll (1QIsaiahᵃ)</strong>, a nearly complete copy of the Book of Isaiah written on 16 sheets of parchment, measuring approximately 24 inches wide and 24 feet long. Paleographers dated it to <strong>c. 125 BCE</strong> — nearly 1,000 years older than the oldest previously known Hebrew manuscripts, the Masoretic Text compiled by Jewish scribes around 900 CE.</p>
+
+      <p>When scholar Millar Burrows and later Eugene Ulrich's team compared 1QIsaiahᵃ with the Masoretic Text, the results were staggering: <strong>the texts matched word-for-word in over 95% of the content</strong>. The remaining 5% consisted almost entirely of minor differences — spelling variations, grammatical forms, and a handful of small additions or omissions — none of which affected meaning or doctrine. One entire chapter (Isaiah 61) had an extra sentence in 1QIsaiahᵃ, but otherwise the texts were essentially identical across a millennium of transmission.</p>
+
+      <p>This was not an isolated case. Dozens of other scrolls from Qumran — including fragments of Genesis, Exodus, Leviticus, Deuteronomy, Samuel, Kings, Psalms, and prophets — confirmed that the Hebrew Bible was transmitted with extraordinary fidelity. The Dead Sea Scrolls effectively ended scholarly claims that the Old Testament had been significantly altered over the centuries.</p>
+
+      <p><strong>Codex Vaticanus (c. 325–350 CE):</strong></p>
+
+      <p>Codex Vaticanus is one of the two oldest nearly complete Bibles in existence (along with Codex Sinaiticus, c. 330 CE). Written in Greek on prepared animal parchment inUncial (capital) letters, it contains <strong>most of the Greek Old Testament (Septuagint)</strong> and <strong>most of the New Testament</strong>. It is considered one of the most important witnesses to the original text of both the Old and New Testaments because it was copied within <strong>roughly 200 years</strong> of the earliest New Testament writings.</p>
+
+      <p><strong>New Testament — 5,800+ Greek Manuscripts:</strong></p>
+
+      <p>The New Testament has more manuscript evidence than any other work of ancient literature. The breakdown:</p>
+
+      <p>• <strong>~5,800 Greek manuscripts</strong> — complete, partial, or fragmentary. Including the earliest papyri (fragments on papyrus parchment) and later codices (bound books).</p>
+
+      <p>• <strong>Earliest fragment — P52 (John Rylands Papyrus):</strong> Dated to <strong>c. 125–150 CE</strong>, containing John 18:31–33, 37–38. This is within <strong>30–60 years</strong> of the traditionally dated composition of the Gospel of John (~90–120 CE). The existence of a fragment of John in Egypt by 125 CE means the Gospel must have been written and circulated widely within a few decades — not centuries.</p>
+
+      <p>• <strong>Earliest complete NT codices — Codex Sinaiticus (c. 330 CE) and Codex Vaticanus (c. 325–350 CE):</strong> Both contain nearly the entire New Testament. They were produced less than 300 years after the apostles wrote.</p>
+
+      <p>• <strong>~10,000 Latin manuscripts</strong> and <strong>~9,300 manuscripts in other languages</strong> (Syriac, Coptic, Armenian, Georgian, etc.), totaling <strong>over 25,000 total manuscript witnesses</strong>.</p>
+
+      <p><strong>Comparison to Other Ancient Texts:</strong></p>
+
+      <p>The closest ancient secular text by manuscript count is Homer's <em>Iliad</em> at ~1,800 copies, but its earliest manuscripts date ~400–500 years after the original. Herodotus's <em>Histories</em> has ~8 copies in the first 1,000 years. Thucydides's <em>Peloponnesian War</em> has ~8 copies. Tacitus's <em>Annals</em> has ~1 copy. Pliny the Younger has ~25. For ancient works generally, 10 copies is considered excellent.</p>
+
+      <p>The New Testament's manuscript evidence is in a category of its own — not just in quantity (over 25,000 total witnesses), but in proximity (fragments within decades, complete texts within ~300 years). This level of evidence is unique among ancient literature and provides an extraordinarily strong foundation for textual reliability.</p>
+
+      <p><strong>Codex Vaticanus (c. 325–350 CE) and Codex Sinaiticus (c. 330 CE)</strong> represent the oldest nearly complete Bibles. They preserve most of the Old and New Testaments within two centuries of the earliest New Testament manuscripts. The gap between the original writings and the oldest complete texts is measured in centuries, not millennia — a stark contrast to the thousand-year gap that was bridged by the Dead Sea Scrolls for the Hebrew Bible.</p>
+
+      <div class="note">
+        <strong>Key point:</strong> Christianity does not accept that God's word can be corrupted — both Isaiah 40:8 and Matthew 5:18 are explicit that God's word will endure without loss.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="contradiction-table" id="about">
+  <h2>The Contradiction</h2>
+  <table>
+    <thead>
+      <tr><th></th><th class="islamic-cell">Islam</th><th class="chris-cell">Christianity</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Previous scriptures (Torah/Gospel)</td><td class="islamic-cell">Were divine but now corrupted (tahrīf)</td><td class="chris-cell">The inspired, authoritative word of God — not corrupted</td></tr>
+      <td>Quran 15:9 vs. Isaiah 40:8</td><td class="islamic-cell">"We will be the Quran's guardian" — implies prior texts are not</td><td class="chris-cell">"The word of our God will stand forever"</td></tr>
+      <td>Bible's current reliability</td><td class="islamic-cell">Contains truth mixed with human corruption</td><td class="chris-cell">Manuscript evidence confirms faithful transmission</td></tr>
+      <td>Role of the Quran</td><td class="islamic-cell">"Criterion over" (murayyhan) prior books — confirms and corrects</td><td class="chris-cell">No role — the Bible is complete and authoritative</td></tr>
+      <td>Scriptural preservation</td><td class="islamic-cell">Only the Quran is fully preserved</td><td class="chris-cell">God's word stands forever — preserved through Jewish and Christian transmission</td></tr>
+      <tr><td>The Tahrīf Dilemma</td><td class="islamic-cell">Commands People of the Book to judge by their own texts (5:43–47) — yet claims those texts are corrupted</td><td class="chris-cell">Self-undermining: if the Torah/Gospel are corrupted, the Quran's entire argument collapses</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>
+  <p>IslamChristianity.com — A scholarly reference for understanding what each tradition actually teaches.<br>
+  Not an argument. Not a debate. Just the sources, presented clearly.</p>
+</footer>
+
+</body>
+</html>

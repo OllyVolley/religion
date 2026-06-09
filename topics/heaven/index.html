@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heaven — IslamChristianity.com</title>
+  <meta name="description" content="What do Islam and Christianity actually promise about the afterlife? Primary sources from both traditions.">
+  <link rel="canonical" href="https://islamchristianity.com/topics/heaven/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0e0e11; --bg-card: #16161b; --bg-card-hover: #1c1c23;
+      --border: #2a2a33; --text: #e4e4e8; --text-muted: #8a8a96;
+      --accent: #c9a84c; --accent-dim: rgba(201, 168, 76, 0.12);
+      --islamic-bg: rgba(52, 168, 84, 0.08); --islamic-border: rgba(52, 168, 84, 0.25);
+      --islamic-label: #34a854;
+      --chris-bg: rgba(234, 67, 53, 0.08); --chris-border: rgba(234, 67, 53, 0.25);
+      --chris-label: #ea4335;
+      --font-sans: 'Inter', -apple-system, BlinkMacMacFont, sans-serif;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --max-w: 800px;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-sans); background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: #dbb85e; }
+    nav { position: sticky; top: 0; z-index: 50; background: rgba(14,14,17,0.85); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+    .nav-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-family: var(--font-serif); font-weight: 700; font-size: 1.2rem; color: var(--text); letter-spacing: -0.02em; }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a { font-size: 0.85rem; font-weight: 500; color: var(--text-muted); letter-spacing: 0.02em; text-transform: uppercase; }
+    .nav-links a:hover { color: var(--accent); }
+    .topic-hero { max-width: var(--max-w); margin: 0 auto; padding: 4.5rem 1.5rem 3rem; }
+    .back-link { display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.78rem; font-weight: 500; color: var(--text-muted); margin-bottom: 2rem; letter-spacing: 0.02em; }
+    .back-link:hover { color: var(--accent); }
+    .back-link::before { content: "90"; font-size: 0.9rem; }
+    .topic-hero h1 { font-family: var(--font-serif); font-size: clamp(2rem, 4.5vw, 2.8rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 0.8rem; }
+    .topic-hero p { font-size: 1.05rem; color: var(--text-muted); max-width: 600px; }
+    .positions { max-width: var(--max-w); margin: 0 auto; padding: 0 1.5rem 5rem; display: flex; flex-direction: column; gap: 2.5rem; }
+    .position { border: 1px solid var(--border); border-radius: 14px; overflow: hidden; }
+    .position-header { padding: 1.2rem 1.8rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+    .position-header.islamic { background: var(--islamic-bg); color: var(--islamic-label); border-bottom: 1px solid var(--islamic-border); }
+    .position-header.christian { background: var(--chris-bg); color: var(--chris-label); border-bottom: 1px solid var(--chris-border); }
+    .position-body { padding: 2rem 1.8rem 2.2rem; }
+    .position-body p { font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.4rem; line-height: 1.7; }
+    .position-body p:last-child { margin-bottom: 0; }
+    blockquote { border-left: 2px solid var(--accent); padding: 1.2rem 1.5rem; margin: 1.5rem 0; background: var(--bg-card); border-radius: 0 8px 8px 0; }
+    blockquote.islamic-bq { border-left-color: var(--islamic-label); background: var(--islamic-bg); }
+    blockquote.christian-bq { border-left-color: var(--chris-label); background: var(--chris-bg); }
+    blockquote p { font-family: var(--font-serif); font-size: 1.05rem; font-style: italic; color: var(--text); line-height: 1.7; margin-bottom: 0.6rem; }
+    blockquote cite { font-family: var(--font-sans); font-size: 0.78rem; font-style: normal; color: var(--text-muted); letter-spacing: 0.01em; }
+    .note { font-size: 0.82rem; color: var(--text-muted); padding: 1rem 1.3rem; background: var(--accent-dim); border-radius: 8px; border: 1px solid rgba(201,168,76,0.15); margin-top: 1rem; }
+    .note strong { color: var(--accent); font-weight: 600; }
+    .contradiction-table { max-width: var(--max-w); margin: 0 auto 5rem; padding: 0 1.5rem; }
+    .contradiction-table h2 { font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 1rem; color: var(--accent); }
+    .contradiction-table table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    .contradiction-table th { padding: 0.8rem 1rem; text-align: left; background: var(--bg-card); border-bottom: 2px solid var(--border); color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
+    .contradiction-table td { padding: 0.8rem 1rem; border-bottom: 1px solid var(--border); color: var(--text); }
+    .contradiction-table tr:last-child td { border-bottom: none; }
+    .contradiction-table .islamic-cell { color: var(--islamic-label); }
+    .contradiction-table .chris-cell { color: var(--chris-label); }
+    footer { border-top: 1px solid var(--border); padding: 2.5rem 1.5rem; text-align: center; }
+    footer p { font-size: 0.78rem; color: var(--text-muted); max-width: var(--max-w); margin: 0 auto; }
+    footer a { color: var(--text-muted); text-decoration: underline; text-decoration-color: var(--border); }
+    footer a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+    @media (max-width: 640px) {
+      .topic-hero { padding: 3.5rem 1.2rem 2.5rem; }
+      .position-body { padding: 1.4rem 1.2rem 1.6rem; }
+      .position-header { padding: 1rem 1.2rem; }
+      blockquote { padding: 1rem 1.2rem; }
+      blockquote p { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../../index.html" class="logo">Islam<span>Christianity</span>.com</a>
+    <div class="nav-links">
+      <a href="../../index.html">Topics</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+</nav>
+
+<div class="topic-hero">
+  <a href="../../index.html" class="back-link">All Topics</a>
+  <h1>Heaven — What Awaits After Death?</h1>
+  <p>What does each tradition promise about the afterlife? The Quran describes it in physical and sensual terms. The Bible describes it in relational and eternal terms. Here's what each says.</p>
+</div>
+
+<main class="positions">
+
+  <section class="position">
+    <div class="position-header islamic">Islamic Position</div>
+    <div class="position-body">
+      <p>Islam teaches that Paradise (Jannah) is a physical garden of eternal bliss — a place of rivers, fruits, silk garments, and sensual pleasures. The Quran describes it in concrete, bodily terms: the rewards of Jannah are not metaphorical, they are literal.</p>
+
+      <blockquote class="islamic-bq">
+        <p>"Indeed, the righteous will be among gardens and rivers — in a seat of honor near a Sovereign, competent."</p>
+        <cite>— Quran 54:45–47 (Sūrat al-Qamar)</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"And We will marry them to hur (houris) with wide, lovely eyes."</p>
+        <cite>— Quran 44:54 (Sūrat ad-Dukhan)</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"For them therein are fruits, and for them whatever they request — peace — a blessing from a Merciful, Merciful God."</p>
+        <cite>— Quran 36:57–58 (Sūrat Ya-Sin)</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"We have prepared for them gardens beneath which rivers flow, wherein they abide forever. Therein are spouses purified, and therein they abide forever."</p>
+        <cite>— Quran 2:25 (Sūrat al-Baqarah)</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"Indeed, those who believe and do righteous deeds — for them is the Garden of Paradise as a lodging, wherein they abide forever. They will not find any shelter besides Allah."</p>
+        <cite>— Quran 18:107–108 (Sūrat al-Kahf)</cite>
+      </blockquote>
+
+      <p>The Quran also describes the pleasures of Jannah in bodily terms:</p>
+
+      <blockquote class="islamic-bq">
+        <p>"And We will give them wives with beautiful, wide-eyed companions."</p>
+        <cite>— Quran 44:54 (Sūrat ad-Dukhan)</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"And [there will be] virgins restrained in palaces, of equal age."</p>
+        <cite>— Quran 56:35–36 (Sūrat al-Waqi'ah)</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"Companions of equal age, with wide, lovely eyes, like pearls well-protected."</p>
+        <cite>— Quran 55:56–58 (Sūrat ar-Rahman)</cite>
+      </blockquote>
+
+      <p>The Quran's physical descriptions go beyond eyes and age. The companions in Paradise are described with specific bodily features:</p>
+
+      <blockquote class="islamic-bq">
+        <p>"And for them are spouses purified — and they will abide eternally therein."</p>
+        <cite>— Quran 2:25 (Sūrat al-Baqarah)</cite>
+      </blockquote>
+
+      <p>The Arabic word used is <strong>ḥūr</strong> (حُور) — from the root ḥ-w-r, meaning "white" or "bright." Classical tafsir (Ibn Kathir, Tabari) explains this as companions whose eyes are intensely dark with brilliantly white surrounds — a description of beauty. The same root is used in the Quran to describe the <strong>pure, white-colored companions</strong> (Quran 47:15: <em>"hurun ʿaynun"</em> — "beautiful-eyed companions").</p>
+
+      <p>In Quran 56:22, the companions are described as <strong>qāṣirāt aṭ-ṭarf</strong> (قَصِرَاتُ الطَّرْف) — their gazes are restrained, meaning they look only at their husbands. Classical commentators agree this is a description of both their beauty and their exclusivity.</p>
+
+      <p>Additionally, Quran 56:35-36 specifically mentions <strong>virgins</strong> (lā ṭḥān — "not touched by men or jinn") and describes them as <strong>equal in age</strong> — emphasizing their physical attributes as part of the promise.</p>, described as virgins of equal age, with wide, lovely eyes. The Arabic term <em>hawariyyun</em> (hur) in 56:22 refers to companions with <strong>dark eyes</strong> — described in classical tafsir as having large, dark, luminous eyes with bright whites. The Quran specifically describes them as <em>qasirāt aṭṭarf</em> (قَصِرَاتُ الطَّرْف) — meaning their glances are "restrained" or "limited" — classical commentators interpret this to mean their eyes are beautiful because they do not look at anyone but their husband.</p>
+
+      <p>Classical Islamic scholarship (Ibn Kathir, Tabari, Qurtubi) consistently interpreted these verses as <strong>literal, physical beings</strong> created for Paradise — not metaphorical. The hur are virgins, untouched by men or jinn, with a specific physical description given by the Quran itself.</p>
+
+      <p>• <strong>Wine</strong> — "a wine which is pure (khalid), not intoxicating, and not causing headache" (Quran 37:47-48, 56:19-22)</p>
+
+      <p>• <strong>Fruits, meat, rivers of milk, honey, and jewels</strong> — all described as literal, physical pleasures</p>
+
+      <p>• <strong>Silk garments and gold bracelets</strong> — Quran 22:23 mentions the righteous "wearing garments of green silk and brocade"</p>
+
+      <p><strong>There is no assurance of salvation in Islam.</strong> A Muslim can never know for certain they will enter Paradise. The Quran repeatedly warns believers to "fear Allah" and never to despair of His mercy. Even the most righteous cannot be certain:</p>
+
+      <blockquote class="islamic-bq">
+        <p>"Indeed, only Allah knows what is coming, and no soul knows what it will earn tomorrow. And no soul knows in what land it will die."</p>
+        <cite>— Quran 31:34 (Sūrat Luqman) — Fundamental uncertainty</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"So as for him who gave [charity] and feared Allah and believed in the best [promise], We will ease him toward ease."</p>
+        <cite>— Quran 92:5–6 (Sūrat al-Lail) — Conditional, not assured</cite>
+      </blockquote>
+
+      <p>Salvation is determined by the <strong>mizan</strong> (the scales) — a weighing of deeds. If your good deeds outweigh your bad, you enter Paradise. If not, you do not. But no Muslim knows the weight of their own deeds. The Quran says in 103:3 that even the Prophet Muhammad himself was "in loss" — a warning that no one can claim certainty.</p>
+
+      <p>This creates an existential anxiety at the heart of Islamic theology: a believer can strive for righteousness for a lifetime, but their eternal fate is unknown, unguaranteed, and subject to a divine judgment they cannot predict.</p>
+
+      <div class="note">
+        <strong>Key point:</strong> In Islam, the rewards of Paradise are literal — physical, sensual, and bodily. The Quran uses the language of earthly pleasure to describe heavenly reward. The <strong>hur</strong> (houris) are specifically created companions, not metaphorical. The wine is not intoxicating but fully pleasurable. These are not allegories. But crucially, <strong>no Muslim can know for certain they will enter Paradise</strong>. Their fate hangs on a scale they cannot weigh — a lifetime of works that may or may not be enough, weighed by a God whose mercy they cannot guarantee.
+      </div>
+    </div>
+  </section>
+
+  <section class="position">
+    <div class="position-header christian">Christian Position</div>
+    <div class="position-body">
+      <p>Christianity teaches that the ultimate reward of heaven is not physical pleasure, but <strong>eternal communion with God</strong> — seeing His face, dwelling in His presence, and being fully free from sin and death. The physical language of Revelation is poetic, not literal.</p>
+
+      <blockquote class="christian-bq">
+        <p>"Blessed are the pure in heart, for they shall see God."</p>
+        <cite>— Matthew 5:8 (ESV)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"Behold, the dwelling place of God is with man. He will dwell with them, and they will be his people, and God himself will be with them as their God. He will wipe away every tear from their eyes, and death shall be no more, neither shall there be mourning, nor crying, nor pain anymore, for the former things have passed away."</p>
+        <cite>— Revelation 21:3–4 (ESV)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"Now to Him who is able to keep you from stumbling and to present you blameless before the presence of his joy with unspeakable joy, to the only God, our Savior, through Jesus Christ our Lord, be glory, majesty, dominion, and authority, before all time and now and forever. Amen."</p>
+        <cite>— Jude 1:24–25 (ESV)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"Beloved, we are God's children now, and what we will be has not yet appeared; but we know that when he appears we shall be like him, because we shall see him as he is."</p>
+        <cite>— 1 John 3:2 (ESV)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"To the one who conquers I will give a place with me on my throne, just as I myself conquered and sat down with my Father on his throne."</p>
+        <cite>— Revelation 3:21 (ESV)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"I saw a new heaven and a new earth, for the first heaven and the first earth had passed away, and the sea was no more. And I saw the holy city, new Jerusalem, coming down out of heaven from God, prepared as a bride adorned for her husband."</p>
+        <cite>— Revelation 21:1–2 (ESV)</cite>
+      </blockquote>
+
+      <p>The "New Jerusalem" is described in Revelation 21-22 with extraordinary architectural detail — walls of jasper, streets of gold, gates of pearl — but these are <strong>symbolic, not literal descriptions of pleasure</strong>. The city has no temple, "for the Lord God Almighty and the Lamb are its temple" (Revelation 21:22). The absence of a temple means God Himself is the temple — and the entire point of heaven is <strong>direct, unmediated presence with God</strong>.</p>
+
+      <p>Heaven is described as a bride adorned for her husband — a relational image, not a sensual one. The ultimate pleasure of heaven is not a garden of pleasure, but the presence of God Himself. John 17:3 defines eternal life as: <em>"that they know you, the only true God, and Jesus Christ whom you have sent."</em></p>
+
+      <p><strong>Assurance of salvation</strong> is a foundational difference between the two traditions. Christianity teaches that a believer can know with certainty they will be in heaven — not because of their own merit, but because of God's promise:</p>
+
+      <blockquote class="christian-bq">
+        <p>"And this is the confidence that we have before him, that if we ask anything according to his will he hears us. And if we know that he hears us in whatever we ask, we know that we have obtained the requests made of us."</p>
+        <cite>— 1 John 5:14–15 (ESV)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"I give them eternal life, and they will never perish, and no one will snatch them out of my hand. My Father, who has given them to me, is greater than all, and no one is able to snatch them out of the Father's hand."</p>
+        <cite>— John 10:28–29 (ESV)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"For I am sure that neither death nor life, nor angels nor rulers, nor things present nor things to come, nor powers, nor height nor depth, nor anything else in all creation, will be able to separate us from the love of God in Christ Jesus our Lord."</p>
+        <cite>— Romans 8:38–39 (ESV)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"If anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come."</p>
+        <cite>— 2 Corinthians 5:17 (ESV)</cite>
+      </blockquote>
+
+      <p>The apostle John writes in 1 John 5:11–13 — specifically to address assurance:</p>
+
+      <blockquote class="christian-bq">
+        <p>"And this is the testimony, that God gave us eternal life, and this life is in his Son. Whoever has the Son has life; whoever does not have the Son of God does not have life. <strong>I write these things to you who believe in the name of the Son of God, that you may know that you have eternal life.</strong>"</p>
+        <cite>— 1 John 5:11–13 (ESV) — John's explicit purpose for writing: so believers can KNOW they have eternal life</cite>
+      </blockquote>
+
+      <p>Paul in Romans 8:15-16 says: <em>"You did not receive the spirit of slavery to fall back into fear, but you have received the Spirit of adoption as sons, by whom we cry, 'Abba! Father!' The Spirit himself bears witness with our spirit that we are children of God."</em></p>
+
+      <p>The Christian doctrine is clear: <strong>salvation assurance is a gift of the Holy Spirit, not a product of self-examination.</strong> A believer does not need to live in fear of whether they've done "enough" — they need to rest in what Christ has done.</p>
+
+      <div class="note">
+        <strong>Key point:</strong> In Christianity, the ultimate reward of heaven is not physical pleasure, but <strong>eternal union with God</strong> — seeing Him face to face, knowing Him fully, and being fully known. The physical descriptions in Revelation are symbolic of the glory and beauty of God's presence, not literal promises of sensual pleasure. The highest heaven is not a garden of pleasure — it is the Father's house with many rooms (John 14:2). And Christians can <strong>know for certain</strong> they will be there — not by checking their own works, but by trusting God's promise.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="contradiction-table" id="about">
+  <h2>The Contradiction</h2>
+  <table>
+    <thead>
+      <tr><th></th><th class="islamic-cell">Islam</th><th class="chris-cell">Christianity</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Nature of heaven</td><td class="islamic-cell">Literal garden of physical/sensual pleasures — food, wine, silk, hur (houris)</td><td class="chris-cell">Relational — eternal union with God, seeing His face</td></tr>
+      <tr><td>Hur (houris)</td><td class="islamic-cell">Created companions with wide eyes, pure and untouched — literal, physical beings</td><td class="chris-cell">Not mentioned — the Church is described as the Bride of Christ, not individual companions</td></tr>
+      <tr><td>Wine in heaven</td><td class="islamic-cell">Pure wine that is pleasurable but not intoxicating (Quran 37:47-48, 56:19-22)</td><td class="chris-cell">Wine is used symbolically at the Marriage Supper of the Lamb (Revelation 19:9)</td></tr>
+      <tr><td>Ultimate goal</td><td class="islamic-cell">Reward for faith + works — physical pleasure in gardens and rivers</td><td class="chris-cell">Knowing God eternally — eternal life is defined as knowing God (John 17:3)</td></tr>
+      <tr><td>No temple</td><td class="islamic-cell">God dwells in Paradise but the focus is on pleasure for believers</td><td class="chris-cell">No temple — God Himself is the temple (Revelation 21:22). The absence of one is intentional</td></tr>
+      <tr><td>How you get there</td><td class="islamic-cell">Faith + good works + Allah's mercy — the scales (mizan) weigh deeds</td><td class="chris-cell">Grace through faith alone, not works (Ephesians 2:8-9)</td></tr>
+      <tr><td>Who enters</td><td class="islamic-cell">Only those who follow Islam (Quran 3:85)</td><td class="chris-cell">Whoever believes in Christ (John 3:16)</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>
+  <p>IslamChristianity.com — A scholarly reference for understanding what each tradition actually teaches.<br>
+  Not an argument. Not a debate. Just the sources, presented clearly.</p>
+</footer>
+
+</body>
+</html>

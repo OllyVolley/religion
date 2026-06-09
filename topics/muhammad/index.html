@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad — Prophet of God? — IslamChristianity.com</title>
+  <meta name="description" content="What does Islam say about Muhammad? What does Christianity say? Side-by-side primary sources on the final prophet.">
+  <link rel="canonical" href="https://islamchristianity.com/topics/muhammad/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #0e0e11;
+      --bg-card: #16161b;
+      --bg-card-hover: #1c1c23;
+      --border: #2a2a33;
+      --text: #e4e4e8;
+      --text-muted: #8a8a96;
+      --accent: #c9a84c;
+      --accent-dim: rgba(201, 168, 76, 0.12);
+      --islamic-bg: rgba(52, 168, 84, 0.08);
+      --islamic-border: rgba(52, 168, 84, 0.25);
+      --islamic-label: #34a854;
+      --chris-bg: rgba(234, 67, 53, 0.08);
+      --chris-border: rgba(234, 67, 53, 0.25);
+      --chris-label: #ea4335;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --max-w: 800px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: #dbb85e; }
+
+    nav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(14,14,17,0.85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-family: var(--font-serif);
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 2rem; }
+    .nav-links a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+    .nav-links a:hover { color: var(--accent); }
+
+    .topic-hero {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 4.5rem 1.5rem 3rem;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      letter-spacing: 0.02em;
+    }
+    .back-link:hover { color: var(--accent); }
+    .back-link::before { content: "←"; font-size: 0.9rem; }
+    .topic-hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4.5vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.8rem;
+    }
+    .topic-hero p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 600px;
+    }
+
+    .positions {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem 5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .position {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      overflow: hidden;
+    }
+    .position-header {
+      padding: 1.2rem 1.8rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+    .position-header.islamic {
+      background: var(--islamic-bg);
+      color: var(--islamic-label);
+      border-bottom: 1px solid var(--islamic-border);
+    }
+    .position-header.christian {
+      background: var(--chris-bg);
+      color: var(--chris-label);
+      border-bottom: 1px solid var(--chris-border);
+    }
+    .position-body {
+      padding: 2rem 1.8rem 2.2rem;
+    }
+    .position-body p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.4rem;
+      line-height: 1.7;
+    }
+    .position-body p:last-child { margin-bottom: 0; }
+
+    blockquote {
+      border-left: 2px solid var(--accent);
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+      background: var(--bg-card);
+      border-radius: 0 8px 8px 0;
+    }
+    blockquote.islamic-bq { border-left-color: var(--islamic-label); background: var(--islamic-bg); }
+    blockquote.christian-bq { border-left-color: var(--chris-label); background: var(--chris-bg); }
+
+    blockquote p {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 0.6rem;
+    }
+    blockquote cite {
+      font-family: var(--font-sans);
+      font-size: 0.78rem;
+      font-style: normal;
+      color: var(--text-muted);
+      letter-spacing: 0.01em;
+    }
+
+    .note {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      padding: 1rem 1.3rem;
+      background: var(--accent-dim);
+      border-radius: 8px;
+      border: 1px solid rgba(201,168,76,0.15);
+      margin-top: 1rem;
+    }
+    .note strong { color: var(--accent); font-weight: 600; }
+
+    .contradiction-table { max-width: var(--max-w); margin: 0 auto 5rem; padding: 0 1.5rem; }
+    .contradiction-table h2 { font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 1rem; color: var(--accent); }
+    .contradiction-table table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    .contradiction-table th { padding: 0.8rem 1rem; text-align: left; background: var(--bg-card); border-bottom: 2px solid var(--border); color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
+    .contradiction-table td { padding: 0.8rem 1rem; border-bottom: 1px solid var(--border); color: var(--text); }
+    .contradiction-table tr:last-child td { border-bottom: none; }
+    .contradiction-table .islamic-cell { color: var(--islamic-label); }
+    .contradiction-table .chris-cell { color: var(--chris-label); }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+    }
+    footer p {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+    footer a { color: var(--text-muted); text-decoration: underline; text-decoration-color: var(--border); }
+    footer a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+
+    @media (max-width: 640px) {
+      .topic-hero { padding: 3.5rem 1.2rem 2.5rem; }
+      .position-body { padding: 1.4rem 1.2rem 1.6rem; }
+      .position-header { padding: 1rem 1.2rem; }
+      blockquote { padding: 1rem 1.2rem; }
+      blockquote p { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="../../index.html" class="logo">Islam<span>Christianity</span>.com</a>
+    <div class="nav-links">
+      <a href="../../index.html">Topics</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+</nav>
+
+<div class="topic-hero">
+  <a href="../../index.html" class="back-link">All Topics</a>
+  <h1>Who is Muhammad?</h1>
+  <p>For Muslims, Muhammad is the final prophet and messenger of God. For Christians, he has no place in their scripture. Here's what each tradition's primary sources say.</p>
+</div>
+
+<main class="positions">
+
+  <!-- ── ISLAMIC POSITION ── -->
+  <section class="position">
+    <div class="position-header islamic">Islamic Position</div>
+    <div class="position-body">
+      <p>Islam teaches that <strong>Muhammad (peace be upon him) is the Messenger of Allah and the Seal of the Prophets (khātam al-nabiyyīn)</strong> — the final prophet in a long line stretching back to Adam, including Noah, Abraham, Moses, and Jesus. He received the Quran through the Angel Gabriel over 23 years and is the model (uswa hasana) for Muslim conduct.</p>
+
+      <blockquote class="islamic-bq">
+        <p>"Muhammad is the Messenger of Allah and the seal of the prophets. And ever is Allah, of all things, Knowing."</p>
+        <cite>— Quran 33:40 (Sūrat al-Aḥzāb, The Combined Forces)</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"And [remember] when Jesus, the son of Mary, said, 'O Children of Israel, indeed I am the messenger of Allah to you confirming what came before me of the Torah and bringing good tidings of a messenger to come after me, whose name: Aḥmad.'"</p>
+        <cite>— Quran 61:6 (Sūrat Aṣ-Ṣaff, The Ranks)</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"Those who follow the Messenger, the unlettered prophet, whom they find written in what they have of the Torah and the Gospel."</p>
+        <cite>— Quran 7:157 (Sūrat al-Aʿrāf, The Heights)</cite>
+      </blockquote>
+
+      <blockquote class="islamic-bq">
+        <p>"Indeed, Allah confers blessing upon the Prophet, and His angels [ask Him to do so]. O you who have believed, ask [Allah to confer] blessing upon him and ask [Allah to grant him] peace."</p>
+        <cite>— Quran 33:56 (Sūrat al-Aḥzāb)</cite>
+      </blockquote>
+
+      <p>In Islamic belief, Muhammad is not merely a legislator but the culmination of God's message to humanity. Every previous prophet preached the same core message of tawḥīd (monotheism), and Muhammad's mission was to restore that original message to its purity.</p>
+
+      <div class="note">
+        <strong>Key point:</strong> The title "Seal of the Prophets" means no prophet comes after Muhammad. His message is final, universal, and unalterable — the last word from God to humanity.
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CHRISTIAN POSITION ── -->
+  <section class="position">
+    <div class="position-header christian">Christian Position</div>
+    <div class="position-body">
+      <p>Christianity <strong>does not recognize Muhammad as a prophet, messenger, or figure of any religious authority</strong>. He appears nowhere in the Bible — Old or New Testament. The Christian tradition has no scriptural basis for acknowledging him and instead warns against false teachers and those who preach a different gospel.</p>
+
+      <blockquote class="christian-bq">
+        <p>"For many deceivers have gone out into the world, those who do not confess the coming of Jesus Christ in the flesh. Such a one is the deceiver and the antichrist."</p>
+        <cite>— 2 John 1:7 (ESV) — Letter of John</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"But even if we or an angel from heaven should preach to you a gospel contrary to what we preached to you, let him be accursed."</p>
+        <cite>— Galatians 1:8 (ESV) — Letter of Paul to the Galatians</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"Beloved, do not believe every spirit, but test the spirits to see whether they are from God, for many false prophets have gone out into the world."</p>
+        <cite>— 1 John 4:1 (ESV)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"For false messiahs and false prophets will arise and perform great signs and wonders, so as to lead astray, if possible, even the elect."</p>
+        <cite>— Matthew 24:24 (ESV) — Gospel of Matthew (c. 70–90 CE)</cite>
+      </blockquote>
+
+      <blockquote class="christian-bq">
+        <p>"I will build my church, and the gates of hell shall not prevail against it."</p>
+        <cite>— Matthew 16:18 (ESV)</cite>
+      </blockquote>
+
+      <p>Historically, Christians have viewed Muhammad as a post-biblical figure with no prophetic authority. The New Testament repeatedly warns that anyone who introduces teachings beyond what was delivered by the apostles is to be rejected. Christian theologians have classified Muhammad's claims as incompatible with the gospel of Jesus Christ.</p>
+
+      <div class="note">
+        <strong>Key point:</strong> There is zero recognition of Muhammad in Christian scripture. Galatians 1:8 is the strongest Christian position: if anyone — even an angel — preaches a different gospel, they are "accursed" (anathema).
+      </div>
+
+      <div class="note">
+        <strong>Christian Counter: Multiple Marriages and the Aisha Marriage</strong> — The Quran explicitly limits Muslim men to a maximum of <strong>four wives</strong> simultaneously (Quran 4:3), with the condition of equal treatment. But then Quran 33:50 grants Muhammad a special exception: he may have up to <strong>four permanent wives plus any female captives he chooses</strong>. At his death, Muhammad had <strong>eleven wives</strong> alive — far exceeding the four-wife limit that applied to every other Muslim man.
+
+        <p>The most damaging marriage is with <strong>Aisha bint Abu Bakr</strong> (daughter of his closest companion and first caliph, Abu Bakr). According to Sahih al-Bukhari 5136, 6237 (the most authoritative hadith collection in Islam), Aisha was:</p>
+
+        <p>• <strong>6 years old</strong> when the marriage contract was concluded</p>
+        <p>• <strong>9 years old</strong> when the marriage was consummated</p>
+        <p>• <strong>He was 53 years old</strong> at the time</p>
+
+        <p>Aisha herself confirms this in Sahih Muslim 3440a. This is not a later fabrication — it is recorded in the most authentic hadith collection and cited by Aisha herself.</p>
+
+        <p>The Quran sets the minimum marriageable age for women as "after they have menstruated" (Quran 65:4) — which at the time was often as young as 9-10. There was no upper age of consent concept in classical Islamic law.</p>
+
+        <p>The Islamic defense — "it was normal for the time" — is a moving target. If morality shifts with culture, there is no moral ground to stand on. What was "normal" in 7th century Arabia does not make it morally justified by any universal standard. And notably, the Bible does not record any biblical prophet marrying a prepubescent girl and having his companions <strong>praise it as a model to follow</strong>.</p>
+      </div>
+
+      <div class="note">
+        <strong>Christian Counter: The Satanic Verses Incident</strong> — One of the most damaging episodes for Islamic claims of prophetic authenticity is the so-called "Satanic Verses" incident, documented in the earliest Islamic sources (Ibn Ishaq, Ibn Sa'd, al-Tabari):
+
+        <p>According to these accounts, Muhammad — eager to convert his Meccan kinsmen and neighbors — was reciting Surah 53 to the Quraysh when <strong>Satan cast words onto his tongue</strong> that did not come from God. The recited verses read:</p>
+
+        <p><em>"Have you considered al-Lat and al-'Uzza? And about the third one, Manat?"</em> — Quran 53:19-20</p>
+
+        <p>Then, according to the account, Satan added:</p>
+
+        <p><em>"These are the high-flying cranes, whose intercession is to be hoped for."</em></p>
+
+        <p>These words praised the three pre-Islamic Arabian goddesses worshipped by the Quraysh — <strong>the exact message Muhammad's audience wanted to hear</strong>. The Quraysh rejoiced. Muhammad's own followers prostrated. Even the pagan Meccans prostrated alongside him. <strong>For a moment, Muhammad had endorsed the worship of the very idols Islam was sent to destroy.</strong></p>
+
+        <p>Then Gabriel appeared and told him: <em>"O Muhammad, what have you done? You have recited to the people something which I have not brought you from God, and you have spoken what He did not say to you."</em></p>
+
+        <p>God then revealed Quran 22:52, which <strong>admits that Satan was able to cast upon the prophet's tongue</strong> — and that God had to <strong>abrogate (remove)</strong> those words and replace them:</p>
+
+        <p><em>"We never sent any apostle or prophet before you but that, when he longed, Satan cast into his longing. But God abrogates what Satan has cast in, and then God puts His verses in proper order..."</em></p>
+
+        <p>Then God replaced the words with Quran 53:21-26, which <strong>denied the intercessory power</strong> of those same goddesses.</p>
+
+        <p><strong>The Christian critique is devastating:</strong></p>
+
+        <p>• This is not a minor error — this is Muhammad pronouncing words <em>directly contradicting</em> the core message of Islam (the rejection of all other gods), under apparent satanic influence.</p>
+        <p>• The Quran itself <em>admits</em> Satan was able to speak through Muhammad — which is exactly what the Bible describes as the <strong>hallmark of a false prophet</strong> (Deuteronomy 13:1-3 — even if signs come true, if he leads you to other gods, he is false).</p>
+        <p>• Muhammad needed <em>correction from God</em> — not just once, but by abrogating his own recited words. Biblical prophets <em>never</em> needed correction for what they recited from God. When a biblical prophet spoke falsely, God killed them (Jeremiah 28:16). There was no "abrogation" process.</p>
+        <p>• The Quran itself acknowledges in 22:52 that <em>every</em> prophet was subject to Satan casting into their longing — which undermines the claim of divine protection over the Quranic text.</p>
+      </div>
+
+      <div class="note">
+        <strong>Christian Counter: The First Encounter</strong> — Critics of Islam point to the nature of Muhammad's first encounter in the Cave of Hira as evidence against prophetic origin:
+
+        <p>According to Islamic tradition (Sahih al-Bukhari), an unidentified figure appeared to Muhammad in the Cave of Hira. He seized Muhammad, compressed him until he could barely breathe, and told him to "recite." Muhammad replied "I cannot recite." This was repeated <strong>three times</strong>. Muhammad later described the experience as terrifying — he fled home trembling, asked to be covered with a garment until his fear subsided, and was told "O you enveloped in garments, arise and warn." (Quran 74:1-2)</p>
+
+        <p>Contrast this with the calls of biblical prophets:</p>
+
+        <p>• <strong>Moses</strong> — God appeared in a burning bush (Exodus 3:2) and spoke to him "face to face, as a man speaks to his friend" (Exodus 33:11). No terror, no compression.</p>
+
+        <p>• <strong>Isaiah</strong> — "I saw the Lord sitting on a throne, high and lifted up" (Isaiah 6:1). He responded with terror: "Woe is me! For I am lost; for I am a man of unclean lips." But God immediately touched his lips with a coal from the altar and said "Your iniquity is taken away."</p>
+
+        <p>• <strong>Ezekiel</strong> — "The Spirit entered me while he was speaking to me" (Ezekiel 2:2). No violence, no compression.</p>
+
+        <p>• <strong>Daniel</strong> — "A hand touched me and set me trembling on my knees" (Daniel 10:10) — but this was a comforting touch after the fact, not a violent seizure.</p>
+
+        <p>• <strong>Jeremiah</strong> — "The hand of the Lord was upon me" (Jeremiah 1:9) — God put His words in Jeremiah's mouth. No coercion.</p>
+
+        <p>• <strong>Paul</strong> — On the road to Damascus, "a light from heaven flashed around me" and he fell to the ground (Acts 9:3–4). He was temporarily blinded, but this was a divine encounter, not a physical seizure by a supernatural being.</p>
+
+        <p>The Christian critique is straightforward: <strong>none of the biblical prophets describe a supernatural being physically compressing and seizing them</strong>, repeating commands three times, leaving them trembling and terrified. The nearest biblical parallel to "fear and torment" is actually the <em>negative</em> side — when false prophets or demons are involved, they produce exactly these symptoms (fear, terror, physical violence from the entity). The Quran itself acknowledges that the "shayatin" (devils/demons) "whisper" to their allies (Quran 6:121, 81:19-21). Critics argue this fits a demonic profile far more than a prophetic one.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="contradiction-table" id="about">
+  <h2>The Contradiction</h2>
+  <table>
+    <thead>
+      <tr><th></th><th class="islamic-cell">Islam</th><th class="chris-cell">Christianity</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Muhammad's status</td><td class="islamic-cell">Final prophet, Messenger of God, Seal of the Prophets (Quran 33:40)</td><td class="chris-cell">Not recognized — no mention in Christian scripture</td></tr>
+      <td>Jesus foretelling Muhammad</td><td class="islamic-cell">Quran 61:6: Jesus announced "Aḥmad" would come after him</td><td class="chris-cell">No biblical basis for this claim</td></tr>
+      <td>Found in Torah/Gospel?</td><td class="islamic-cell">Quran 7:157: found written in Torah and Gospel</td><td class="chris-cell">No — Muhammad does not appear in any biblical text</td></tr>
+      <td>Following a post-biblical prophet</td><td class="islamic-cell">Obligatory — Muhammad is the final messenger</td><td class="chris-cell">Galatians 1:8: even an angel preaching another gospel is accursed</td></tr>
+      <td>Who has the final word?</td><td class="islamic-cell">The Quran — confirmed and corrected by the final revelation</td><td class="chris-cell">The Bible — sufficient, complete, authoritative</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<footer>
+  <p>IslamChristianity.com — A scholarly reference for understanding what each tradition actually teaches.<br>
+  Not an argument. Not a debate. Just the sources, presented clearly.</p>
+</footer>
+
+</body>
+</html>

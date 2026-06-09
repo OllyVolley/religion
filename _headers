@@ -1,0 +1,38 @@
+# == Cloudflare Pages _headers — Security + Caching
+# Generated for IslamChristianity.com production deployment
+
+# ——— Security headers (all pages) ———
+/*
+  Strict-Transport-Security: "max-age=31536000; includeSubDomains; preload"
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'none'"
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# ——— Cache: HTML pages ———
+/
+/index.html
+/topics/*
+  Cache-Control: "public, max-age=3600, s-maxage=3600, stale-while-revalidate=7200"
+
+# ——— Cache: CSS (content-hashed, long-lived) ———
+/css/*.css
+  Cache-Control: "public, max-age=31536000, immutable"
+
+# ——— Cache: JS (long-lived) ———
+/js/*.js
+  Cache-Control: "public, max-age=31536000, immutable"
+
+# ——— Cache: fonts ———
+/fonts/*
+  Cache-Control: "public, max-age=31536000, immutable"
+
+# ——— Cache: assets (images, etc.) ———
+/assets/*
+  Cache-Control: "public, max-age=31536000, immutable"
+
+# ——— Block direct access to non-public files ———
+/research/*
+  Cache-Control: "no-store"

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /topics/
+
+# Sitemap location
+Sitemap: https://islamchristianity.com/sitemap.xml

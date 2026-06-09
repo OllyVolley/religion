@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IslamChristianity.com — Neutral, Fact-Based Comparison</title>
+<meta name="description" content="Compare Islam and Christianity side-by-side. Factual, sourced positions on 7 theological topics. No advocacy. No conversion. Just: here's what each tradition says, from their own sources.">
+<link rel="canonical" href="https://islamchristianity.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #0e0e11; color: #c4c4d0; min-height: 100vh; }
+a { color: #c9a84c; text-decoration: none; transition: color 0.2s; }
+a:hover { color: #dbb85e; }
+
+/* Header */
+.site-header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(14,14,17,0.9);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #1e1e2e;
+  height: 56px;
+}
+.header-inner {
+  max-width: 1100px; margin: 0 auto; padding: 0 24px;
+  height: 100%; display: flex; align-items: center; justify-content: space-between;
+}
+.site-logo {
+  font-size: 16px; font-weight: 700; color: #f0f0f8; letter-spacing: -0.02em;
+  display: flex; align-items: center; gap: 8px;
+}
+.site-logo .logo-icon {
+  width: 28px; height: 28px; background: #2d5a4c; border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-size: 11px; font-weight: 800;
+}
+.nav-links { display: flex; gap: 24px; }
+.nav-links a { font-size: 13px; font-weight: 500; color: #8a8a96; }
+.nav-links a:hover, .nav-links a.active { color: #f0f0f8; }
+
+/* Hero */
+.hero {
+  max-width: 1100px; margin: 0 auto; padding: 56px 24px 36px; text-align: center;
+}
+.hero-tag {
+  display: inline-block; font-size: 11px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: #c9a84c; background: rgba(201,168,76,0.1); padding: 5px 14px;
+  border-radius: 20px; margin-bottom: 18px;
+}
+.hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(28px, 5vw, 44px); font-weight: 700; line-height: 1.15;
+  letter-spacing: -0.03em; margin-bottom: 14px; color: #f0f0f8;
+}
+.hero h1 .accent { color: #c9a84c; }
+.hero-sub { font-size: 16px; color: #8a8a96; max-width: 520px; margin: 0 auto; line-height: 1.6; }
+
+/* Topic Cards */
+.topics { max-width: 1100px; margin: 0 auto; padding: 0 24px 60px; }
+.topics-title { font-size: 14px; font-weight: 700; color: #8a8a96; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 20px; }
+.topic-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+
+.topic-card {
+  background: #16161f; border: 1px solid #2a2a38; border-radius: 12px; padding: 24px;
+  transition: border-color 0.2s, background 0.2s, transform 0.15s;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.topic-card:hover { border-color: #3a3a4a; background: #1a1a26; transform: translateY(-1px); }
+
+.topic-card .num {
+  font-size: 10px; font-weight: 700; color: #6b6b7b;
+  text-transform: uppercase; letter-spacing: 0.8px;
+}
+
+.topic-card h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 17px; font-weight: 600; color: #f0f0f8;
+  letter-spacing: -0.01em; line-height: 1.35;
+}
+
+.topic-card p { font-size: 13px; color: #8a8a96; line-height: 1.55; flex-grow: 1; }
+
+.topic-card .card-meta {
+  font-size: 12px; color: #c9a84c; font-weight: 600;
+  display: flex; align-items: center; gap: 6px;
+}
+.topic-card .card-meta .arrow { transition: transform 0.15s; display: inline-block; }
+.topic-card:hover .card-meta .arrow { transform: translateX(3px); }
+
+/* Footer */
+.site-footer { border-top: 1px solid #1e1e2e; padding: 28px 24px; }
+.footer-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.footer-inner p { font-size: 12px; color: #6b6b7b; }
+.footer-links { display: flex; gap: 20px; list-style: none; }
+.footer-links a { font-size: 12px; color: #8a8a96; }
+.footer-links a:hover { color: #c9a84c; }
+
+@media (max-width: 640px) {
+  .topic-grid { grid-template-columns: 1fr; }
+  .footer-inner { flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="site-logo">
+      <div class="logo-icon">IC</div>
+      IslamChristianity.com
+    </a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Topics</a>
+      <a href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <span class="hero-tag">Neutral · Factual · Sourced</span>
+  <h1>Facts from both traditions.<br><span class="accent">Sourced.</span> No preaching.</h1>
+  <p class="hero-sub">Look up what each faith says about theological flashpoints — side by side, with primary sources cited. Built for Muslims and Christians who want clarity, not debate.</p>
+</section>
+
+<section class="topics">
+  <div class="topics-title">Browse Topics</div>
+  <div class="topic-grid">
+
+    <a href="topics/crucifixion/" class="topic-card">
+      <div class="num">Topic 1</div>
+      <h3>The Crucifixion</h3>
+      <p>Did Jesus die on the cross? What do the Quran and the Bible each say about this central event?</p>
+      <div class="card-meta">Islamic &amp; Christian positions <span class="arrow">→</span></div>
+    </a>
+
+    <a href="topics/jesus-nature/" class="topic-card">
+      <div class="num">Topic 2</div>
+      <h3>Nature of Jesus</h3>
+      <p>Was Jesus divine, a prophet, or the Son of God? How each tradition understands his nature and role.</p>
+      <div class="card-meta">Islamic &amp; Christian positions <span class="arrow">→</span></div>
+    </a>
+
+    <a href="topics/trinity/" class="topic-card">
+      <div class="num">Topic 3</div>
+      <h3>The Trinity</h3>
+      <p>How Christians define the Trinity and how Muslims understand — or reject — the concept of God as Trinity.</p>
+      <div class="card-meta">Islamic &amp; Christian positions <span class="arrow">→</span></div>
+    </a>
+
+    <a href="topics/quran-vs-bible/" class="topic-card">
+      <div class="num">Topic 4</div>
+      <h3>Quran vs. Bible</h3>
+      <p>What each faith says about the other's holy book — authenticity, corruption, and authority.</p>
+      <div class="card-meta">Islamic &amp; Christian positions <span class="arrow">→</span></div>
+    </a>
+
+    <a href="topics/salvation/" class="topic-card">
+      <div class="num">Topic 5</div>
+      <h3>Salvation</h3>
+      <p>How each faith defines salvation — through faith in Christ or through submission to Allah's mercy.</p>
+      <div class="card-meta">Islamic &amp; Christian positions <span class="arrow">→</span></div>
+    </a>
+
+    <a href="topics/muhammad/" class="topic-card">
+      <div class="num">Topic 6</div>
+      <h3>Prophet Muhammad</h3>
+      <p>How Christians view Prophet Muhammad — historically and theologically — alongside the Islamic perspective.</p>
+      <div class="card-meta">Islamic &amp; Christian positions <span class="arrow">→</span></div>
+    </a>
+
+    <a href="topics/heaven/" class="topic-card">
+      <div class="num">Topic 7</div>
+      <h3>Heaven</h3>
+      <p>Both promise paradise — but what does that actually mean? What each tradition says about the afterlife.</p>
+      <div class="card-meta">Islamic &amp; Christian positions <span class="arrow">→</span></div>
+    </a>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>IslamChristianity.com — Neutral reference library. Sourced. No agenda.</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
