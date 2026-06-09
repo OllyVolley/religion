@@ -191,6 +191,25 @@
     }
     .note strong { color: var(--accent); font-weight: 600; }
 
+    /* ── CONTRADICTION TABLE ── */
+    .contradiction-table { max-width: var(--max-w); margin: 0 auto 5rem; padding: 0 1.5rem; }
+    .contradiction-table h2 { font-family: var(--font-serif); font-size: 1.4rem; margin-bottom: 1rem; color: var(--accent); }
+    .contradiction-table table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+    .contradiction-table th { padding: 0.8rem 1rem; text-align: left; background: var(--bg-card); border-bottom: 2px solid var(--border); color: var(--text-muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; }
+    .contradiction-table td { padding: 0.8rem 1rem; border-bottom: 1px solid var(--border); color: var(--text); }
+    .contradiction-table tr:last-child td { border-bottom: none; }
+    .contradiction-table .islamic-cell { color: var(--islamic-label); }
+    .contradiction-table .chris-cell { color: var(--chris-label); }
+
+
+    .contradiction-table th:nth-child(1),
+    .contradiction-table td:nth-child(1) { width: 16%; min-width: 120px; }
+    .contradiction-table th:nth-child(2),
+    .contradiction-table td:nth-child(2) { width: 42%; }
+    .contradiction-table th:nth-child(3),
+    .contradiction-table td:nth-child(3) { width: 42%; }
+
+
     /* ── FOOTER ── */
     footer {
       border-top: 1px solid var(--border);
@@ -220,10 +239,10 @@
 
 <nav>
   <div class="nav-inner">
-    <a href="../../index.html" class="logo">Islam<span>Christianity</span>.com</a>
+    <a href="../../index.html" class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg> Home</a>
     <div class="nav-links">
       <a href="../../index.html">Topics</a>
-      <a href="#about">About</a>
+
     </div>
   </div>
 </nav>
@@ -327,8 +346,23 @@
 
 </main>
 
+<div class="contradiction-table" id="about">
+  <h2>The Contradiction</h2>
+  <table>
+    <thead>
+      <tr><th></th><th class="islamic-cell">Islam</th><th class="chris-cell">Christianity</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Crucifixion of Jesus</td><td class="islamic-cell">Did not happen — God saved Jesus (Quran 4:157–158)</td><td class="chris-cell">Did happen — central to the gospel (Gospels, Paul)</td></tr>
+      <td>Meaning of the cross</td><td class="islamic-cell">No atonement needed — Jesus was raised to God</td><td class="chris-cell">Atonement for sin — "without shedding of blood there is no forgiveness" (Hebrews 9:22)</td></tr>
+      <td>Quran on the crucifixion</td><td class="islamic-cell">"They did not kill him, nor did they crucify him" (Quran 4:157)</td><td class="chris-cell">No mention — the event is attested by all four Gospels and early Christian writers</td></tr>
+      <td>Who has the final word?</td><td class="islamic-cell">The Quran — divine revelation correcting prior accounts</td><td class="chris-cell">The Gospels — eyewitness accounts of the event</td></tr>
+    </tbody>
+  </table>
+</div>
+
 <footer id="about">
-  <p>IslamChristianity.com — A scholarly reference for understanding what each tradition actually teaches.<br>
+  <p>Home — A scholarly reference for understanding what each tradition actually teaches.<br>
   Not an argument. Not a debate. Just the sources, presented clearly.</p>
 </footer>
 
